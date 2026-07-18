@@ -88,14 +88,7 @@ export const HomecomingDetails: React.FC = () => {
           </motion.div>
         </div>
 
-        <div className="relative w-full overflow-hidden py-6 flex justify-center bg-black -mt-1 z-10">
-          <div className="relative w-full max-w-5xl flex justify-center">
-            <picture className="w-full flex justify-center">
-              <source media="(min-width: 768px)" srcSet="/thisarani/deco.png" />
-              <img src="/thisarani/deco.png" alt="Floral Decoration" className="w-full h-auto max-h-[400px] object-contain block opacity-70" />
-            </picture>
-          </div>
-        </div>
+
       </div>
     </section>
   );
