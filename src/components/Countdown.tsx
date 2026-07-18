@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { differenceInDays, differenceInHours, differenceInMinutes, differenceInSeconds } from 'date-fns';
 import { motion } from 'motion/react';
+import { Heart } from 'lucide-react';
 
 interface CountdownProps {
   targetDate: Date;
@@ -29,117 +30,54 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <section 
-      aria-label="Countdown" 
-      id="countdown" 
-      className="relative py-20 sm:py-28 px-6 overflow-hidden bg-[#FFFFF0]"
-      style={{
-        backgroundImage: "url('/ChatGPT Image Jul 15, 2026, 01_05_55 AM.png')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="flex items-center justify-center mb-10 sm:mb-14" aria-hidden="true">
-        <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
-          <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-          <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-          <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#D4AF37" fillOpacity="0.3" />
-          <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#D4AF37" fillOpacity="0.3" />
-          <circle cx="110" cy="12" r="3" fill="#D4AF37" fillOpacity="0.9" />
-          <circle cx="110" cy="12" r="6" fill="none" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.45" />
-          <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-          <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-        </svg>
-      </div>
-
-      <div className="mx-auto max-w-3xl text-center">
-        <h2 className="font-serif text-3xl sm:text-5xl md:text-6xl mb-3" style={{ color: "#AA8000" }}>
-          Until We Say I Do
-        </h2>
-
-        <div className="mb-10 sm:mb-12">
-          <div className="flex items-center justify-center gap-3" aria-hidden="true">
-            <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, #D4AF37cc)" }} />
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
-              <polygon points="4.5,0 9,4.5 4.5,9 0,4.5" fill="#D4AF37" fillOpacity="0.85" />
-            </svg>
-            <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(270deg, transparent, #D4AF37cc)" }} />
-          </div>
-        </div>
-
-        <div className="relative">
-          <div className="pointer-events-none absolute inset-x-0 top-1/2 -translate-y-1/2 h-32 blur-[24px]" style={{ background: "radial-gradient(ellipse 80% 100% at 50% 50%, rgba(212,175,55,0.11) 0%, transparent 70%)" }} aria-hidden="true" />
-
-          <style dangerouslySetInnerHTML={{
-            __html: `
-            .countdown-glass-wrapper {
-              background: rgba(212,175,55,0.05);
-              border: 1px solid rgba(212,175,55,0.3);
-              border-radius: 0.75rem;
-              padding: 1.75rem 1.5rem;
-              overflow: hidden;
-            }
-            @media (max-width: 639px) {
-              .countdown-glass-wrapper > div { gap: 1rem !important; }
-              .countdown-glass-wrapper > div > div { gap: 0.875rem !important; }
-              .countdown-glass-wrapper svg { margin-left: -0.375rem !important; margin-right: -0.375rem !important; }
-            }
-            @media (min-width: 640px) {
-              .countdown-glass-wrapper {
-                background: transparent;
-                backdrop-filter: none;
-                -webkit-backdrop-filter: none;
-                border: none;
-                border-radius: 0;
-                padding: 0;
-                overflow: visible;
-              }
-            }
-          `}} />
-
-          <div className="relative z-10 countdown-glass-wrapper">
-            <div className="flex items-center justify-center gap-8 sm:gap-12 md:gap-14">
-              {[
-                { label: 'Days', value: timeLeft.days },
-                { label: 'Hours', value: timeLeft.hours },
-                { label: 'Minutes', value: timeLeft.minutes },
-                { label: 'Seconds', value: timeLeft.seconds }
-              ].map((item, index, arr) => (
-                <React.Fragment key={item.label}>
-                  <div className="flex items-center gap-8 sm:gap-12 md:gap-14">
-                    <div className="flex flex-col items-center gap-2">
-                      <span className="text-4xl sm:text-5xl md:text-6xl font-medium leading-none" style={{ color: "#AA8000", fontVariantNumeric: "tabular-nums" }}>
-                        {String(item.value).padStart(2, '0')}
-                      </span>
-                      <div className="w-full h-px" style={{ background: "linear-gradient(90deg, transparent, rgba(212, 175, 55, 0.733), transparent)" }} />
-                      <span className="text-[9px] sm:text-[10px] uppercase tracking-[0.38em] font-sans" style={{ color: "#AA8000", opacity: 0.8 }}>
-                        {item.label}
-                      </span>
-                    </div>
-                    {index < arr.length - 1 && (
-                      <svg width="7" height="7" viewBox="0 0 7 7" fill="none" aria-hidden="true" className="-mx-3 sm:-mx-5 md:-mx-6 shrink-0 opacity-45">
-                        <polygon points="3.5,0 7,3.5 3.5,7 0,3.5" fill="#D4AF37" />
-                      </svg>
-                    )}
-                  </div>
-                </React.Fragment>
-              ))}
+    <section className="w-full py-24 bg-gradient-to-br from-black to-red-900 overflow-hidden relative">
+      <div className="container px-4 md:px-6 mx-auto relative z-10">
+        <div className="flex flex-col items-center space-y-12 text-center">
+          
+          <motion.div 
+            className="space-y-4"
+            initial={{ opacity: 0, scale: 0.95 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8 }}
+          >
+            <h2 className="text-5xl md:text-7xl font-display text-[#D4AF37] leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
+              Counting Down to<br/>Forever
+            </h2>
+            <div className="flex items-center justify-center space-x-3 text-gray-300 mt-4">
+              <Heart className="h-5 w-5 text-gray-300" strokeWidth={1.5} />
+              <span className="text-lg md:text-xl font-sans text-white font-light tracking-wide">
+                Our special day is almost here
+              </span>
+              <Heart className="h-5 w-5 text-gray-300" strokeWidth={1.5} />
             </div>
-          </div>
-        </div>
-      </div>
+          </motion.div>
 
-      <div className="flex items-center justify-center mt-10 sm:mt-14" aria-hidden="true">
-        <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
-          <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-          <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-          <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#D4AF37" fillOpacity="0.3" />
-          <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#D4AF37" fillOpacity="0.3" />
-          <circle cx="110" cy="12" r="3" fill="#D4AF37" fillOpacity="0.9" />
-          <circle cx="110" cy="12" r="6" fill="none" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.45" />
-          <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-          <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-        </svg>
+          <motion.div 
+            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 max-w-5xl w-full pt-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1, delay: 0.2 }}
+          >
+            {[
+              { label: 'Days', value: timeLeft.days },
+              { label: 'Hours', value: timeLeft.hours },
+              { label: 'Minutes', value: timeLeft.minutes },
+              { label: 'Seconds', value: timeLeft.seconds }
+            ].map((item, i) => (
+              <div key={item.label} className="flex flex-col items-center justify-center p-6 w-40 h-56 md:w-48 md:h-64 bg-black rounded-[45%] shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-[#D4AF37]/40 mx-auto transition-transform hover:scale-105 duration-300">
+                <div className="text-6xl md:text-7xl font-bold font-sans text-[#D4AF37] mb-2" style={{ fontVariantNumeric: "tabular-nums" }}>
+                  {String(item.value).padStart(2, '0')}
+                </div>
+                <div className="text-xs md:text-sm text-white font-medium font-sans uppercase tracking-widest mt-2">
+                  {item.label}
+                </div>
+              </div>
+            ))}
+          </motion.div>
+
+        </div>
       </div>
     </section>
   );

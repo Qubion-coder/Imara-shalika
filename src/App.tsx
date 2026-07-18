@@ -4,26 +4,29 @@ import { Music, Music2, Volume2, VolumeX } from 'lucide-react';
 import { FloatingPetals } from './components/FloatingPetals';
 
 import { Countdown } from './components/Countdown';
-import { Celebration } from './components/Celebration';
-import { Location } from './components/Location';
+import { HappyCouple } from './components/HappyCouple';
+import { HomecomingDetails } from './components/HomecomingDetails';
+import { DressCode } from './components/DressCode';
+import { ColorPalette } from './components/ColorPalette';
 import { NoteFromUs } from './components/NoteFromUs';
+import { ClosingCTA } from './components/ClosingCTA';
 // Removed Timeline import
-import { Gallery } from './components/Gallery';
 
 import { RSVPForm } from './components/RSVPForm';
 import { Footer } from './components/Footer';
 import { IntroVideo } from './components/IntroVideo';
+import { IntroOverlay } from './components/IntroOverlay';
 
 import { HeroContent } from './components/HeroContent';
 import { CornerFlowers } from './components/CornerFlowers';
 
 export default function App() {
-  const [showIntro, setShowIntro] = useState(false);
-  const [showMain, setShowMain] = useState(true);
+  const [showIntro, setShowIntro] = useState(true);
+  const [showMain, setShowMain] = useState(false);
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-08-12T09:00:00');
+  const weddingDate = new Date('2026-09-21T17:15:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -69,12 +72,29 @@ export default function App() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/paulyudin-wedding-485932.mp3"
+        src="/until-i-found-you.mp3"
         loop
         autoPlay
         onPlay={() => setIsMusicPlaying(true)}
         onPause={() => setIsMusicPlaying(false)}
       />
+
+      <AnimatePresence mode="wait">
+        {showIntro && (
+          <motion.div 
+            key="intro" 
+            exit={{ opacity: 0 }} 
+            transition={{ duration: 1 }}
+            className="fixed inset-0 z-50"
+          >
+            <IntroOverlay onEnter={() => {
+              setShowIntro(false);
+              setShowMain(true);
+              startMusic();
+            }} />
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       <AnimatePresence mode="wait">
         {showMain && (
@@ -100,15 +120,17 @@ export default function App() {
 
             <Countdown targetDate={weddingDate} />
 
-            <Celebration />
+            <HappyCouple />
 
-            <Location />
+            <HomecomingDetails />
+
+            <DressCode />
+
+            <ColorPalette />
 
             <NoteFromUs />
 
-            <Gallery />
-
-
+            <ClosingCTA />
 
             <RSVPForm />
 

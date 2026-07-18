@@ -1,59 +1,67 @@
 import React from 'react';
+import { Heart } from 'lucide-react';
 
 export const Footer: React.FC = () => {
+  const scrollToSection = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' });
+  };
+
   return (
-    <footer 
-      aria-label="Footer" 
-      className="relative py-20 sm:py-28 px-6 text-center overflow-hidden bg-[#FFFFF0]"
-      style={{
-        backgroundImage: "url('/WhatsApp Image 2026-07-15 at 01.10.34.jpeg')",
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-      }}
-    >
-      <div className="pointer-events-none absolute inset-0 opacity-[0.18]" style={{ background: "radial-gradient(ellipse 80% 55% at 50% 0%, #E8C547, #D4AF37 30%, transparent 65%)" }} aria-hidden="true" />
-      <div className="pointer-events-none absolute rounded-full" aria-hidden="true" style={{ width: "2px", height: "2px", top: "18%", left: "12%", background: "rgb(232, 197, 71)", boxShadow: "rgb(232, 197, 71) 0px 0px 6px", transform: "scale(1.10867)" }} />
-      <div className="pointer-events-none absolute rounded-full" aria-hidden="true" style={{ width: "1.5px", height: "1.5px", top: "62%", left: "88%", background: "rgb(232, 197, 71)", boxShadow: "rgb(232, 197, 71) 0px 0px 4.5px", transform: "scale(0.503558)" }} />
-      <div className="pointer-events-none absolute rounded-full" aria-hidden="true" style={{ width: "2.5px", height: "2.5px", top: "34%", left: "73%", background: "rgb(232, 197, 71)", boxShadow: "rgb(232, 197, 71) 0px 0px 7.5px", transform: "scale(0.677318)" }} />
-      <div className="pointer-events-none absolute rounded-full" aria-hidden="true" style={{ width: "1.5px", height: "1.5px", top: "77%", left: "22%", background: "rgb(232, 197, 71)", boxShadow: "rgb(232, 197, 71) 0px 0px 4.5px", transform: "scale(0.791541)" }} />
-      <div className="pointer-events-none absolute rounded-full" aria-hidden="true" style={{ width: "1px", height: "1px", top: "45%", left: "50%", background: "rgb(232, 197, 71)", boxShadow: "rgb(232, 197, 71) 0px 0px 3px", transform: "scale(0.520101)" }} />
-      
-      <div className="relative mx-auto max-w-lg">
-        <div className="mb-7">
-          <div className="flex items-center justify-center gap-3" aria-hidden="true">
-            <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(90deg, transparent, #D4AF37cc)" }} />
-            <svg width="9" height="9" viewBox="0 0 9 9" fill="none">
-              <polygon points="4.5,0 9,4.5 4.5,9 0,4.5" fill="#D4AF37" fillOpacity="0.85" />
-            </svg>
-            <div className="h-px w-12 sm:w-16" style={{ background: "linear-gradient(270deg, transparent, #D4AF37cc)" }} />
+    <footer className="w-full py-16 bg-gradient-to-br from-rose-900 via-black to-black text-white">
+      <div className="container px-4 md:px-6 mx-auto">
+        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
+          
+          <div className="space-y-6">
+            <div className="flex items-center space-x-3">
+              <Heart className="h-8 w-8 text-[#D4AF37]" strokeWidth={1.5} />
+              <span className="text-4xl font-display" style={{ fontFamily: "'Great Vibes', cursive" }}>I &amp; I</span>
+            </div>
+            <p className="text-gray-300 leading-relaxed font-sans text-justify tracking-wide">
+              Thank you for visiting our wedding website and being part of our love story. We can't wait to celebrate with you!
+            </p>
           </div>
-        </div>
-        
-        <h2 className="font-serif text-4xl sm:text-5xl md:text-6xl mb-4 text-[#2C2924]">
-          With Love, Until Then
-        </h2>
-        <p className="font-sans text-[11px] font-light tracking-[0.35em] uppercase mb-7 text-[#8B6B00]">
-          12/08/2026
-        </p>
-        
-        <div>
-          <div className="flex items-center justify-center" aria-hidden="true">
-            <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
-              <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-              <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#D4AF37" fillOpacity="0.3" />
-              <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#D4AF37" fillOpacity="0.3" />
-              <circle cx="110" cy="12" r="3" fill="#D4AF37" fillOpacity="0.9" />
-              <circle cx="110" cy="12" r="6" fill="none" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.45" />
-              <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-            </svg>
+
+          <div className="space-y-6">
+            <h3 className="text-xl font-sans font-medium text-[#D4AF37] uppercase tracking-widest">Quick Links</h3>
+            <ul className="space-y-3">
+              <li>
+                <button onClick={() => scrollToSection('details')} className="text-gray-300 hover:text-white transition-colors capitalize font-sans tracking-wide">
+                  details
+                </button>
+              </li>
+              <li>
+                <button onClick={() => scrollToSection('rsvp')} className="text-gray-300 hover:text-white transition-colors capitalize font-sans tracking-wide">
+                  rsvp
+                </button>
+              </li>
+            </ul>
           </div>
+
+          <div className="space-y-6">
+            <h3 className="text-xl font-sans font-medium text-[#D4AF37] uppercase tracking-widest">Wedding Details</h3>
+            <div className="space-y-3 text-gray-300 font-sans tracking-wide">
+              <p>21st September 2026</p>
+              <p>Jetwing Lighthouse - Galle</p>
+              <p className="text-sm">#Imalsha&amp;Isuru2026</p>
+            </div>
+          </div>
+
+
         </div>
-        
-        <p className="font-display mt-6 text-2xl sm:text-3xl font-light italic" style={{ color: "#AA8000" }}>
-          Roshini &amp; Nimesh
-        </p>
+
+        <div className="mt-16 pt-8 border-t border-[#D4AF37]/50 text-center">
+          <div className="flex items-center justify-center space-x-2 mb-4">
+            <Heart className="h-5 w-5 text-[#D4AF37]" strokeWidth={1.5} />
+            <span className="text-gray-300 font-sans tracking-widest uppercase text-sm">Made with love</span>
+            <Heart className="h-5 w-5 text-[#D4AF37]" strokeWidth={1.5} />
+          </div>
+          <p className="text-[#D4AF37] text-sm font-sans tracking-wider">
+            © 2026 Imalsha &amp; Isuru's Wedding
+          </p>
+          <p className="text-[#D4AF37] text-xs mt-2 font-sans tracking-wider">
+            Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-white hover:text-[#D4AF37] underline" href="https://wa.me/94707819074">invitemint</a>
+          </p>
+        </div>
       </div>
     </footer>
   );
