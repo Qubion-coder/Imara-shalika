@@ -62,6 +62,8 @@ With love,
                 <option value="Mr. & Mrs.">Mr. & Mrs.</option>
                 <option value="Family">Family</option>
                 <option value="Dear">Dear</option>
+                <option value="Dr.">Dr.</option>
+                <option value="Prof.">Prof.</option>
               </select>
             </div>
             <div className="w-full sm:w-2/3">

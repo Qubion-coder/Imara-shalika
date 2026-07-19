@@ -8,8 +8,8 @@ export const Admin: React.FC = () => {
   const [messageCopied, setMessageCopied] = useState(false);
 
   const baseUrl = window.location.origin + '/';
-  
-  const generatedLink = guestName.trim() 
+
+  const generatedLink = guestName.trim()
     ? `${baseUrl}?prefix=${encodeURIComponent(prefix)}&name=${encodeURIComponent(guestName.trim())}`
     : baseUrl;
 
@@ -39,12 +39,12 @@ export const Admin: React.FC = () => {
     <div className="min-h-screen bg-brand-ivory text-stone-800 p-6 md:p-12 font-sans flex items-center justify-center">
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-8 border border-[#D4AF37]/30">
         <h1 className="text-3xl font-serif text-center mb-8 text-stone-800">Wedding Invitation Link Generator</h1>
-        
+
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div className="space-y-2">
               <label className="text-sm font-medium text-stone-600 uppercase tracking-widest">Prefix</label>
-              <select 
+              <select
                 value={prefix}
                 onChange={(e) => setPrefix(e.target.value)}
                 className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] outline-none transition-all"
@@ -59,10 +59,10 @@ export const Admin: React.FC = () => {
                 <option value="Prof.">Prof.</option>
               </select>
             </div>
-            
+
             <div className="md:col-span-2 space-y-2">
               <label className="text-sm font-medium text-stone-600 uppercase tracking-widest">Guest Name</label>
-              <input 
+              <input
                 type="text"
                 placeholder="e.g. Sanjaya"
                 value={guestName}
@@ -76,13 +76,13 @@ export const Admin: React.FC = () => {
             <div className="space-y-2">
               <label className="text-sm font-medium text-stone-600 uppercase tracking-widest">Generated Link</label>
               <div className="flex flex-col sm:flex-row gap-2">
-                <input 
+                <input
                   type="text"
                   readOnly
                   value={generatedLink}
                   className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 text-stone-500 text-sm outline-none"
                 />
-                <button 
+                <button
                   onClick={handleCopyLink}
                   className="h-12 px-6 flex items-center justify-center gap-2 bg-stone-800 hover:bg-black text-[#D4AF37] rounded-xl font-medium transition-all sm:min-w-[140px]"
                 >
@@ -94,13 +94,13 @@ export const Admin: React.FC = () => {
 
             <div className="space-y-2">
               <label className="text-sm font-medium text-stone-600 uppercase tracking-widest">Full Message Template</label>
-              <textarea 
+              <textarea
                 readOnly
                 value={generatedMessage}
                 rows={12}
                 className="w-full p-4 rounded-xl border border-stone-200 bg-stone-50 text-stone-600 text-sm outline-none resize-none"
               />
-              <button 
+              <button
                 onClick={handleCopyMessage}
                 className="w-full h-12 mt-2 flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#C5A030] text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-all"
               >
