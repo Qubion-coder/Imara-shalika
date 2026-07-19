@@ -28,15 +28,15 @@ export const HeroContent: React.FC = () => {
         
         {guestNameString && (
           <motion.div 
-            className="absolute top-8 sm:top-12 left-1/2 -translate-x-1/2 px-6 py-3 rounded-xl border border-[#D4AF37]/30 bg-black/40 backdrop-blur-md shadow-lg flex flex-col items-center justify-center min-w-[240px]"
+            className="flex flex-col items-center justify-center mb-6 sm:mb-8 bg-black/30 px-8 py-4 rounded-2xl backdrop-blur-sm border border-[#D4AF37]/20"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
           >
-            <p className="text-[10px] uppercase tracking-[0.25em] mb-1 font-sans text-white/80">
+            <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2 font-sans text-white/90 drop-shadow-md text-center">
               We cordially invite
             </p>
-            <p className="font-serif text-xl sm:text-2xl text-[#E8C547] whitespace-nowrap">
+            <p className="font-serif text-2xl sm:text-3xl text-[#D4AF37] whitespace-nowrap text-center drop-shadow-lg">
               {guestNameString}
             </p>
           </motion.div>

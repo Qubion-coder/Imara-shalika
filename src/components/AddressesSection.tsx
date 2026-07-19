@@ -23,7 +23,7 @@ export const AddressesSection: React.FC = () => {
       note: 'Ceremony begins at 04:30 PM',
     },
     homecoming: {
-      title: 'The Homecoming',
+      title: 'The Wedding',
       name: 'Maze Glass House',
       address: 'Chilaw - Colombo Main Rd, Wennappuwa 61170',
     }

@@ -1,8 +1,4 @@
 {
-  "buildCommand": "rm -rf node_modules && npm install && vite build",
-  "env": {
-    "VITE_SITE_URL": "https://gimhan-teneeshiya-weddinginvitation.vercel.app"
-  },
   "rewrites": [
     {
       "source": "/(.*)",

@@ -24,7 +24,7 @@ export const HomecomingEvent: React.FC = () => {
               </div>
 
               <h2 className="text-5xl sm:text-6xl lg:text-7xl font-display text-stone-800 mb-8 leading-[1.1] drop-shadow-sm">
-                The <span className="italic font-light text-homecoming-primary">Homecoming</span>
+                The <span className="italic font-light text-homecoming-primary">Wedding</span>
               </h2>
 
               <p className="text-stone-500/90 font-serif text-lg sm:text-xl leading-relaxed mb-16 max-w-lg">
@@ -103,7 +103,7 @@ export const HomecomingEvent: React.FC = () => {
               <div className="relative aspect-[3/4] sm:aspect-[4/5] rounded-[2rem] sm:rounded-[3rem] overflow-hidden border-[6px] sm:border-[8px] border-white shadow-xl bg-homecoming-bg group flex items-center justify-center">
                 <img 
                   src="/WhatsApp Image 2026-06-10 at 01.11.27 (1).jpeg" 
-                  alt="Homecoming" 
+                  alt="Wedding" 
                   className="w-full h-full object-cover transition-transform duration-[2s] ease-out group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-b from-transparent to-homecoming-primary/30 mix-blend-overlay opacity-60 group-hover:opacity-40 transition-opacity duration-1000" />

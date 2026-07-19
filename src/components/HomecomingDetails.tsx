@@ -57,9 +57,11 @@ export const HomecomingDetails: React.FC = () => {
                     <p className="text-[10px] tracking-[0.3em] uppercase opacity-60">Monday</p>
                     <p className="text-xl font-semibold tracking-widest">21st September 2026</p>
                   </div>
-                  <p className="text-md tracking-wider border-y border-[#D4AF37]/50 py-2 inline-block px-4">
-                    Registration 5:15 PM • Poruwa 6:02 PM
-                  </p>
+                  <div className="text-md tracking-wider border-y border-[#D4AF37]/50 py-2 inline-block px-8 text-center space-y-1">
+                    <div>Registration 5:15 PM</div>
+                    <div>Poruwa 6:02 PM</div>
+                    <div>Reception 6:30 PM</div>
+                  </div>
                   
                   <div className="flex flex-col items-center space-y-3 pt-2">
                     <MapPin className="h-5 w-5 text-white" />

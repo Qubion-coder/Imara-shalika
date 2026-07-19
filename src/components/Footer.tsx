@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
               <span className="text-4xl font-display" style={{ fontFamily: "'Great Vibes', cursive" }}>I &amp; I</span>
             </div>
             <p className="text-gray-300 leading-relaxed font-sans text-justify tracking-wide">
-              Thank you for visiting our wedding website and being part of our love story. We can't wait to celebrate with you!
+              Thank you for visiting our wedding website and being part of our love story. The honor of your presence would mean the world to us.
             </p>
           </div>
 

@@ -36,7 +36,7 @@ export const ClosingCTA: React.FC = () => {
           </h2>
           
           <p className="text-xl md:text-2xl leading-relaxed opacity-90 tracking-wide max-w-3xl mx-auto mt-6">
-            Your love, blessings, and presence are the greatest gifts we could receive. We cannot wait to celebrate this unforgettable day with you.
+            Your love, blessings, and presence are the greatest gifts we could receive. We look forward to celebrating this special day with you.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-6 justify-center pt-8">
@@ -52,7 +52,7 @@ export const ClosingCTA: React.FC = () => {
               className="inline-flex items-center justify-center whitespace-nowrap h-14 border-2 border-white text-white hover:bg-white/10 rounded-full px-10 py-6 text-lg font-medium backdrop-blur-sm transform hover:-translate-y-1 transition-all duration-300 tracking-widest uppercase"
             >
               <List className="mr-3 h-5 w-5" />
-              Homecoming Details
+              Wedding Details
             </button>
           </div>
         </motion.div>

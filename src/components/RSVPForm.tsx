@@ -56,7 +56,7 @@ export const RSVPForm: React.FC = () => {
           </h2>
           <div className="w-32 h-1 bg-red-900 rounded-full"></div>
           <p className="text-lg md:text-xl text-white max-w-3xl font-sans text-center sm:text-justify mt-6 tracking-wide">
-            We can't wait to celebrate with you! Please let us know if you'll be joining us on our special day.
+            Where forever begins, and we’d love for you to be there. Please let us know if you'll be joining us on our special day.
           </p>
         </motion.div>
 
@@ -139,7 +139,7 @@ export const RSVPForm: React.FC = () => {
                 
                 <div className="pt-2">
                   <a 
-                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Thisarani+%26+Isuru+Homecoming&dates=20260801T130000Z/20260801T180000Z&details=We+are+excited+to+celebrate+with+you!&location=Hotel+Grand+Mondo,+Homagama&sf=true&output=xml" 
+                    href="https://www.google.com/calendar/render?action=TEMPLATE&text=Imalsha+%26+Isuru+Wedding&dates=20260921T114500Z/20260921T183000Z&details=We+are+excited+to+celebrate+with+you!&location=Jetwing+Lighthouse,+Galle&sf=true&output=xml" 
                     target="_blank" 
                     rel="noopener noreferrer" 
                     className="w-full inline-flex justify-center items-center bg-black hover:bg-zinc-900 text-[#D4AF37] rounded-xl py-4 text-lg font-medium shadow-[0_10px_20px_rgba(0,0,0,0.3)] hover:shadow-xl transition-all duration-300 font-sans border border-[#D4AF37]/50 tracking-widest uppercase hover:-translate-y-1"
