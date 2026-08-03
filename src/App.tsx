@@ -9,7 +9,6 @@ import { HomecomingDetails } from './components/HomecomingDetails';
 import { DressCode } from './components/DressCode';
 import { ColorPalette } from './components/ColorPalette';
 import { NoteFromUs } from './components/NoteFromUs';
-import { ClosingCTA } from './components/ClosingCTA';
 // Removed Timeline import
 
 import { RSVPForm } from './components/RSVPForm';
@@ -31,7 +30,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-09-21T17:15:00');
+  const weddingDate = new Date('2026-12-12T17:15:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -134,8 +133,6 @@ export default function App() {
             <ColorPalette />
 
             <NoteFromUs />
-
-            <ClosingCTA />
 
             <RSVPForm />
 

@@ -30,7 +30,15 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
   }, [targetDate]);
 
   return (
-    <section className="w-full py-24 bg-gradient-to-br from-black to-red-900 overflow-hidden relative">
+    <section 
+      className="w-full py-24 overflow-hidden relative"
+      style={{ 
+        backgroundImage: 'url("/ChatGPT Image Aug 4, 2026, 01_44_43 AM.png")', 
+        backgroundSize: 'cover', 
+        backgroundPosition: 'center' 
+      }}
+    >
+      <div className="absolute inset-0 bg-black/30"></div>
       <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="flex flex-col items-center space-y-12 text-center">
           
@@ -41,20 +49,20 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <h2 className="text-5xl md:text-7xl font-display text-[#D4AF37] leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
+            <h2 className="text-5xl md:text-7xl font-display text-[#D4AF37] leading-tight" style={{ fontFamily: "'Great Vibes', cursive", textShadow: '0 4px 12px rgba(0,0,0,0.5)' }}>
               Counting Down to<br/>Forever
             </h2>
-            <div className="flex items-center justify-center space-x-3 text-gray-300 mt-4">
-              <Heart className="h-5 w-5 text-gray-300" strokeWidth={1.5} />
-              <span className="text-lg md:text-xl font-sans text-white font-light tracking-wide">
+            <div className="flex items-center justify-center space-x-3 text-[#D4AF37] mt-4">
+              <Heart className="h-4 w-4 md:h-5 md:w-5 text-[#D4AF37]" strokeWidth={1.5} />
+              <span className="text-[10px] md:text-sm font-sans text-white font-medium uppercase tracking-[0.2em] md:tracking-[0.3em] drop-shadow-md">
                 Our special day is almost here
               </span>
-              <Heart className="h-5 w-5 text-gray-300" strokeWidth={1.5} />
+              <Heart className="h-4 w-4 md:h-5 md:w-5 text-[#D4AF37]" strokeWidth={1.5} />
             </div>
           </motion.div>
 
           <motion.div 
-            className="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-12 max-w-5xl w-full pt-8"
+            className="grid grid-cols-2 gap-4 md:gap-8 max-w-md md:max-w-2xl w-full pt-8 mx-auto"
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
@@ -66,11 +74,11 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
               { label: 'Minutes', value: timeLeft.minutes },
               { label: 'Seconds', value: timeLeft.seconds }
             ].map((item, i) => (
-              <div key={item.label} className="flex flex-col items-center justify-center p-6 w-40 h-56 md:w-48 md:h-64 bg-black rounded-[45%] shadow-[0_10px_30px_rgba(0,0,0,0.5)] border border-[#D4AF37]/40 mx-auto transition-transform hover:scale-105 duration-300">
-                <div className="text-6xl md:text-7xl font-bold font-sans text-[#D4AF37] mb-2" style={{ fontVariantNumeric: "tabular-nums" }}>
+              <div key={item.label} className="flex flex-col items-center justify-center p-6 w-full aspect-[3/4] max-h-[280px] bg-[#1a0f1d]/80 backdrop-blur-sm rounded-t-[40%] rounded-b-[40%] shadow-[0_10px_30px_rgba(0,0,0,0.8)] border-[1.5px] border-[#D4AF37]/60 mx-auto transition-transform hover:scale-105 duration-300">
+                <div className="text-6xl md:text-8xl font-serif text-[#D4AF37] mb-2 drop-shadow-md" style={{ fontVariantNumeric: "tabular-nums" }}>
                   {String(item.value).padStart(2, '0')}
                 </div>
-                <div className="text-xs md:text-sm text-white font-medium font-sans uppercase tracking-widest mt-2">
+                <div className="text-[10px] md:text-xs text-white font-medium font-sans uppercase tracking-[0.2em] mt-2 opacity-90">
                   {item.label}
                 </div>
               </div>

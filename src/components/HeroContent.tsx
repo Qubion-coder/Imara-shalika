@@ -16,7 +16,7 @@ export const HeroContent: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/hero_bg.png" 
+          src="/ChatGPT Image Aug 4, 2026, 01_41_50 AM.png" 
           alt="Wedding background" 
           className="h-full w-full object-cover" 
           loading="eager" 
@@ -62,7 +62,7 @@ export const HeroContent: React.FC = () => {
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Imalsha
+            Nethmi
           </h1>
           
           <div className="my-1 sm:my-3 text-white opacity-90 drop-shadow-lg">
@@ -70,11 +70,11 @@ export const HeroContent: React.FC = () => {
           </div>
 
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Isuru
+            Kavindu
           </h1>
           
           <p className="text-sm sm:text-lg md:text-xl font-sans tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase mt-12 sm:mt-16 drop-shadow-md">
-            Monday, September 21, 2026
+            Saturday, December 12, 2026
           </p>
         </motion.div>
 
