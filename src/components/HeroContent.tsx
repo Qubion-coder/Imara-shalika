@@ -62,7 +62,7 @@ export const HeroContent: React.FC = () => {
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Nethmi
+            Shalani
           </h1>
           
           <div className="my-1 sm:my-3 text-white opacity-90 drop-shadow-lg">
@@ -70,7 +70,7 @@ export const HeroContent: React.FC = () => {
           </div>
 
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Kavindu
+            Thenuka
           </h1>
           
           <p className="text-sm sm:text-lg md:text-xl font-sans tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase mt-12 sm:mt-16 drop-shadow-md">

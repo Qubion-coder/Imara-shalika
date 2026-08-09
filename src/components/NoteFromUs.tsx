@@ -58,7 +58,7 @@ export const NoteFromUs: React.FC = () => {
                 With love always
               </p>
               <p className="font-display text-[#D4AF37] text-4xl md:text-5xl drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>
-                Nethmi &amp; Kavindu
+                Shalani &amp; Thenuka
               </p>
             </div>
           </div>

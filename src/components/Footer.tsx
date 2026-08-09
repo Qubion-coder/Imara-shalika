@@ -17,7 +17,7 @@ export const Footer: React.FC = () => {
           <div className="space-y-6">
             <div className="flex items-center space-x-3">
               <Heart className="h-8 w-8 text-[#D4AF37] opacity-90 fill-transparent" strokeWidth={1} />
-              <span className="text-4xl lg:text-5xl font-display text-[#D4AF37] drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>N &amp; K</span>
+              <span className="text-4xl lg:text-5xl font-display text-[#D4AF37] drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>S &amp; T</span>
             </div>
             <p className="text-white/70 leading-[1.8] font-serif text-justify tracking-wide text-sm md:text-base pr-4">
               Thank you for visiting our wedding website and being part of our love story. The honor of your presence would mean the world to us.
@@ -47,7 +47,7 @@ export const Footer: React.FC = () => {
             <div className="space-y-3 text-white/70 font-sans tracking-[0.1em] text-sm">
               <p>12th December 2026</p>
               <p>Shangri-La Hotel - Colombo</p>
-              <p className="text-[#D4AF37] italic mt-4 font-serif tracking-widest text-xs opacity-80">#Nethmi&amp;Kavindu2026</p>
+              <p className="text-[#D4AF37] italic mt-4 font-serif tracking-widest text-xs opacity-80">#Shalani&amp;Thenuka2026</p>
             </div>
           </div>
 
@@ -60,7 +60,7 @@ export const Footer: React.FC = () => {
             <div className="w-8 h-[1px] bg-gradient-to-l from-transparent to-[#D4AF37]/50"></div>
           </div>
           <p className="text-[#D4AF37]/70 text-[10px] md:text-xs font-sans tracking-[0.2em] uppercase">
-            © 2026 Nethmi &amp; Kavindu's Wedding
+            © 2026 Shalani &amp; Thenuka's Wedding
           </p>
           <p className="text-white/40 text-[10px] mt-4 font-sans tracking-[0.1em]">
             Want a beautiful wedding website like this? Create yours with <a target="_blank" rel="noreferrer" className="text-[#D4AF37] hover:text-white transition-colors underline underline-offset-2" href="https://wa.me/94707819074">invitemint</a>
