@@ -5,7 +5,7 @@ import { Heart } from 'lucide-react';
 export const HappyCouple: React.FC = () => {
   return (
     <section
-      className="w-full py-16 md:py-24 bg-[#1a0b1c] relative overflow-hidden flex items-center justify-center min-h-[100dvh]"
+      className="w-full py-16 md:py-24 bg-[#121212] relative overflow-hidden flex items-center justify-center min-h-[100dvh]"
       style={{
         backgroundImage: 'url("https://i.pinimg.com/736x/39/39/79/39397974439b6ac0833e39713841ceee.jpg")',
         backgroundSize: 'cover',

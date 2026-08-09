@@ -7,7 +7,7 @@ export const Footer: React.FC = () => {
   };
 
   return (
-    <footer className="w-full py-16 bg-[#0a040b] text-white border-t border-[#D4AF37]/20 relative overflow-hidden">
+    <footer className="w-full py-16 bg-[#000000] text-white border-t border-[#D4AF37]/20 relative overflow-hidden">
       {/* Subtle background glow */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-2xl h-1/2 bg-[#D4AF37]/5 blur-[100px] rounded-full pointer-events-none"></div>
 

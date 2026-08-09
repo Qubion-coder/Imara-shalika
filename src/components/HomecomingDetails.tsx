@@ -4,7 +4,7 @@ import { MapPin, Clock, CalendarHeart } from 'lucide-react';
 
 export const HomecomingDetails: React.FC = () => {
   return (
-    <section id="details" className="w-full py-24 relative overflow-hidden bg-[#130715]">
+    <section id="details" className="w-full py-24 relative overflow-hidden bg-[#000000]">
       
       {/* Subtle Glow Effects */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-full max-w-3xl h-1/2 bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none"></div>

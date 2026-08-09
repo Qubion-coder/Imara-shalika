@@ -42,7 +42,7 @@ export const RSVPForm: React.FC = () => {
   };
 
   return (
-    <section id="rsvp" className="w-full py-24 relative overflow-hidden bg-[#130715]">
+    <section id="rsvp" className="w-full py-24 relative overflow-hidden bg-[#000000]">
       
       {/* Subtle Glow Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-3/4 bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none"></div>
@@ -112,9 +112,9 @@ export const RSVPForm: React.FC = () => {
                         className="w-full bg-black/60 text-white border border-[#D4AF37]/40 rounded-xl px-5 py-4 font-sans appearance-none pr-10 focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] outline-none transition-all"
                         disabled={isSubmitting}
                       >
-                        <option value="" disabled className="bg-[#1a0b1c] text-white/50">Select an option</option>
-                        <option value="yes" className="bg-[#1a0b1c] text-white">Yes, I'll be there</option>
-                        <option value="no" className="bg-[#1a0b1c] text-white">Sorry, I can't make it</option>
+                        <option value="" disabled className="bg-[#121212] text-white/50">Select an option</option>
+                        <option value="yes" className="bg-[#121212] text-white">Yes, I'll be there</option>
+                        <option value="no" className="bg-[#121212] text-white">Sorry, I can't make it</option>
                       </select>
                       <svg className="w-5 h-5 absolute right-4 top-1/2 transform -translate-y-1/2 text-[#D4AF37] pointer-events-none" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>

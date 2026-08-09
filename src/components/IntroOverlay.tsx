@@ -38,7 +38,7 @@ export const IntroOverlay: React.FC<IntroOverlayProps> = ({ onEnter }) => {
           >
             <button 
               onClick={handlePlay}
-              className="font-sans px-10 py-4 bg-[#1a0b1c]/80 backdrop-blur-md text-[#D4AF37] border border-[#D4AF37]/50 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:bg-[#D4AF37] hover:text-black hover:scale-105 transition-all duration-300 uppercase tracking-[0.3em] text-xs sm:text-sm"
+              className="font-sans px-10 py-4 bg-[#121212]/80 backdrop-blur-md text-[#D4AF37] border border-[#D4AF37]/50 rounded-full shadow-[0_10px_30px_rgba(0,0,0,0.5)] hover:bg-[#D4AF37] hover:text-black hover:scale-105 transition-all duration-300 uppercase tracking-[0.3em] text-xs sm:text-sm"
             >
               Open Invitation
             </button>

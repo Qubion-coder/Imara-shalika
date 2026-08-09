@@ -31,7 +31,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <section 
-      className="w-full py-24 overflow-hidden relative bg-[#130715]"
+      className="w-full py-24 overflow-hidden relative bg-[#000000]"
     >
       <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="flex flex-col items-center space-y-12 text-center">

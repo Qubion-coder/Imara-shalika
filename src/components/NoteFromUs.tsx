@@ -7,7 +7,7 @@ export const NoteFromUs: React.FC = () => {
     <section 
       aria-label="A note from us" 
       id="note" 
-      className="relative w-full py-24 overflow-hidden bg-[#130715]"
+      className="relative w-full py-24 overflow-hidden bg-[#000000]"
       style={{
         backgroundImage: 'url("https://i.pinimg.com/736x/e3/92/35/e39235e4fad8d169c20cb88c4cf2e817.jpg")',
         backgroundSize: 'cover',
