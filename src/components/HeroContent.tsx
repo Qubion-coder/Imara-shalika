@@ -16,7 +16,7 @@ export const HeroContent: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="/ChatGPT Image Aug 4, 2026, 01_41_50 AM.png" 
+          src="https://i.pinimg.com/736x/bc/dc/a3/bcdca375ec9b088f3e9a5770dd5d9653.jpg" 
           alt="Wedding background" 
           className="h-full w-full object-cover" 
           loading="eager" 

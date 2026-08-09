@@ -43,12 +43,6 @@ export const RSVPForm: React.FC = () => {
 
   return (
     <section id="rsvp" className="w-full py-24 relative overflow-hidden bg-[#130715]">
-      {/* Background Image with Faded Edges */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/ChatGPT Image Aug 4, 2026, 02_12_09 AM.png')` }}
-      ></div>
-      <div className="absolute inset-0 bg-gradient-to-b from-[#130715] via-transparent to-[#130715]"></div>
       
       {/* Subtle Glow Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-3/4 bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none"></div>
@@ -99,7 +93,7 @@ export const RSVPForm: React.FC = () => {
                     <input 
                       type="text" 
                       required 
-                      placeholder="Eg: Namal Perera" 
+                      placeholder="Eg: Kasun Silva" 
                       className="w-full bg-black/60 text-white border border-[#D4AF37]/40 rounded-xl px-5 py-4 font-sans focus:ring-1 focus:ring-[#D4AF37] focus:border-[#D4AF37] outline-none transition-all placeholder:text-white/30"
                       name="name" 
                       value={name}

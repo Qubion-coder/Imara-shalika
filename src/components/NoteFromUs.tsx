@@ -4,15 +4,18 @@ import { Heart, Sparkles } from 'lucide-react';
 
 export const NoteFromUs: React.FC = () => {
   return (
-    <section aria-label="A note from us" id="note" className="relative w-full py-24 overflow-hidden bg-[#130715]">
-      
-      {/* Background Image with Faded Edges */}
-      <div 
-        className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-        style={{ backgroundImage: `url('/ChatGPT Image Aug 4, 2026, 02_12_09 AM.png')` }}
-      ></div>
-      <div className="absolute inset-0 bg-gradient-to-t from-[#130715] via-transparent to-[#130715]"></div>
-      
+    <section 
+      aria-label="A note from us" 
+      id="note" 
+      className="relative w-full py-24 overflow-hidden bg-[#130715]"
+      style={{
+        backgroundImage: 'url("https://i.pinimg.com/736x/e3/92/35/e39235e4fad8d169c20cb88c4cf2e817.jpg")',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundRepeat: 'no-repeat'
+      }}
+    >
+      <div className="absolute inset-0 bg-black/40"></div>
       {/* Subtle Glow Effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-2xl h-3/4 bg-[#D4AF37]/5 blur-[100px] rounded-full pointer-events-none"></div>
 

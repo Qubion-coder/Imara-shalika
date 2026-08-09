@@ -31,14 +31,8 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <section 
-      className="w-full py-24 overflow-hidden relative"
-      style={{ 
-        backgroundImage: 'url("/ChatGPT Image Aug 4, 2026, 01_44_43 AM.png")', 
-        backgroundSize: 'cover', 
-        backgroundPosition: 'center' 
-      }}
+      className="w-full py-24 overflow-hidden relative bg-[#130715]"
     >
-      <div className="absolute inset-0 bg-black/30"></div>
       <div className="container px-4 md:px-6 mx-auto relative z-10">
         <div className="flex flex-col items-center space-y-12 text-center">
           
