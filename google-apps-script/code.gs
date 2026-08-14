@@ -1,4 +1,4 @@
-const SPREADSHEET_ID = '1IMV3FN0jZZk3CFWPG0H1kYensNHLc_Y4PzqpL67qVdc';
+const SPREADSHEET_ID = '12Z8LWjq1o2p57A4uOeI10OxHYQUAhYartnNeJTfKM5Q';
 const SHEET_NAMES = {
   rsvp: 'RSVP',
   wishes: 'Wishes',
@@ -53,7 +53,8 @@ function ensureHeaders(sheetKey, sheet) {
 
   let numCols = 4;
   if (sheetKey === 'rsvp') {
-    sheet.appendRow(['Timestamp', 'Name', 'Status', 'Submitted At (ISO)']);
+    sheet.appendRow(['Timestamp', 'Name', 'Status', 'Message', 'Submitted At (ISO)']);
+    numCols = 5;
   } else if (sheetKey === 'wishes') {
     sheet.appendRow(['Timestamp', 'Name', 'Wish', 'Submitted At (ISO)']);
   }
@@ -75,6 +76,7 @@ function buildRow(sheetKey, payload) {
       now,
       sanitize(payload.name),
       sanitize(payload.status),
+      sanitize(payload.message),
       sanitize(payload.submittedAt),
     ];
   } else if (sheetKey === 'wishes') {

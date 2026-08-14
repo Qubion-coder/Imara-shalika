@@ -7,7 +7,7 @@ export const HappyCouple: React.FC = () => {
     <section
       className="w-full py-16 md:py-24 bg-[#121212] relative overflow-hidden flex items-center justify-center min-h-[100dvh]"
       style={{
-        backgroundImage: 'url("/pre/WhatsApp Image 2026-08-14 at 20.52.37.jpeg")',
+        backgroundImage: 'url("/pre/WhatsApp Image 2026-08-14 at 20.52.36.jpeg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'

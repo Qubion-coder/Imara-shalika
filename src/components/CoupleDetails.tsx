@@ -33,7 +33,7 @@ export const CoupleDetails: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.2 }}
-          className="text-center lg:text-right flex-1 lg:pr-10 order-4 lg:order-1"
+          className="text-center lg:text-right flex-1 lg:pr-10 order-2 lg:order-1"
         >
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
@@ -57,9 +57,9 @@ export const CoupleDetails: React.FC = () => {
           <div className="absolute -inset-2 bg-gradient-to-b from-brand-primary/30 to-transparent rounded-[12rem_12rem_1rem_1rem] blur-xl opacity-60 group-hover:opacity-100 transition-opacity duration-700 pointer-events-none" />
 
           <div className="relative w-[300px] h-[400px] sm:w-[360px] sm:h-[500px] lg:w-[420px] lg:h-[580px] rounded-[12rem_12rem_16px_16px] overflow-hidden border-[6px] border-white/90 shadow-[0_20px_50px_rgba(70,130,180,0.2)] bg-brand-champagne mx-auto z-10 transition-transform duration-700 group-hover:-translate-y-2 flex flex-col items-center justify-center gap-4">
-            <img 
-              src="/pre/gallery-3.jpg" 
-              alt="Couple" 
+            <img
+              src="/pre/gallery-3.jpg"
+              alt="Couple"
               className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
             />
             {/* Elegant inner shadow & overlay */}
@@ -83,7 +83,7 @@ export const CoupleDetails: React.FC = () => {
           whileInView={{ opacity: 1, x: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 1, ease: "easeOut", delay: 0.4 }}
-          className="text-center lg:text-left flex-1 lg:pl-10 order-2 lg:order-3"
+          className="text-center lg:text-left flex-1 lg:pl-10 order-4 lg:order-3"
         >
           <div className="mb-4 flex flex-col items-center lg:items-start">
             <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>

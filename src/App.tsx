@@ -7,8 +7,7 @@ import { Countdown } from './components/Countdown';
 import { HappyCouple } from './components/HappyCouple';
 import { HorizontalGallery } from './components/HorizontalGallery';
 import { HomecomingDetails } from './components/HomecomingDetails';
-import { DressCode } from './components/DressCode';
-import { ColorPalette } from './components/ColorPalette';
+
 import { NoteFromUs } from './components/NoteFromUs';
 // Removed Timeline import
 
@@ -131,9 +130,7 @@ export default function App() {
 
             <HomecomingDetails />
 
-            <DressCode />
 
-            <ColorPalette />
 
             <NoteFromUs />
 

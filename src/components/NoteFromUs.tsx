@@ -8,12 +8,6 @@ export const NoteFromUs: React.FC = () => {
       aria-label="A note from us" 
       id="note" 
       className="relative w-full py-24 overflow-hidden bg-[#000000]"
-      style={{
-        backgroundImage: 'url("https://i.pinimg.com/736x/e3/92/35/e39235e4fad8d169c20cb88c4cf2e817.jpg")',
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
-        backgroundRepeat: 'no-repeat'
-      }}
     >
       <div className="absolute inset-0 bg-black/40"></div>
       {/* Subtle Glow Effects */}
@@ -58,7 +52,7 @@ export const NoteFromUs: React.FC = () => {
                 With love always
               </p>
               <p className="font-display text-[#D4AF37] text-4xl md:text-5xl drop-shadow-sm" style={{ fontFamily: "'Great Vibes', cursive" }}>
-                Shalani &amp; Thenuka
+                Danuja &amp; Thaniya
               </p>
             </div>
           </div>
