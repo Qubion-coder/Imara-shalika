@@ -5,6 +5,7 @@ import { FloatingPetals } from './components/FloatingPetals';
 
 import { Countdown } from './components/Countdown';
 import { HappyCouple } from './components/HappyCouple';
+import { HorizontalGallery } from './components/HorizontalGallery';
 import { HomecomingDetails } from './components/HomecomingDetails';
 import { DressCode } from './components/DressCode';
 import { ColorPalette } from './components/ColorPalette';
@@ -30,7 +31,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-12-12T17:15:00');
+  const weddingDate = new Date('2026-09-12T19:00:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -76,7 +77,7 @@ export default function App() {
       {/* Background Music */}
       <audio
         ref={audioRef}
-        src="/Until I Found You - Stephen Sanchez - Cover (Violin).mp3"
+        src="/ssstik.io_1786658574127.mp3"
         loop
         autoPlay
         onPlay={() => setIsMusicPlaying(true)}
@@ -125,6 +126,8 @@ export default function App() {
             <Countdown targetDate={weddingDate} />
 
             <HappyCouple />
+
+            <HorizontalGallery />
 
             <HomecomingDetails />
 

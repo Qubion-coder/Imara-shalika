@@ -39,8 +39,8 @@ export const HomecomingEvent: React.FC = () => {
                     <Calendar className="w-5 h-5 text-homecoming-primary" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">Sunday, July 26</h4>
-                    <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Maze Glass House, Wennappuwa</p>
+                    <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">Saturday, September 12</h4>
+                    <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Senuri Grand Castello</p>
                   </div>
                 </div>
 
@@ -50,7 +50,7 @@ export const HomecomingEvent: React.FC = () => {
                     <Clock className="w-5 h-5 text-homecoming-light" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">06:00 PM</h4>
+                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">07:00 PM</h4>
                     <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Welcome & Drinks</p>
                   </div>
                 </div>
@@ -60,7 +60,7 @@ export const HomecomingEvent: React.FC = () => {
                     <Heart className="w-5 h-5 text-white" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">07:00 PM</h4>
+                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">08:00 PM</h4>
                     <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Dinner is Served</p>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export const HomecomingEvent: React.FC = () => {
                     <Clock className="w-5 h-5 text-homecoming-light" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">08:30 PM</h4>
+                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">09:30 PM</h4>
                     <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Toasts & Music</p>
                   </div>
                 </div>

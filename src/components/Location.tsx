@@ -3,9 +3,9 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
-   const venueAddress = "Katupitiya Road, Dambokka, Kurunegala";
-  const mapUrl = `https://maps.google.com/maps?q=Asliya%20Golden%20Cassandra,%20Kurunegala&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-  const liveLocationUrl = "https://maps.app.goo.gl/nc952KAvT9H34fgw9";
+   const venueAddress = "Senuri Grand Castello";
+  const mapUrl = `https://maps.google.com/maps?q=Senuri%20Grand%20Castello&t=&z=15&ie=UTF8&iwloc=&output=embed`;
+  const liveLocationUrl = "https://maps.app.goo.gl/sPhQ8ByTPagJzPES7?g_st=aw";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">

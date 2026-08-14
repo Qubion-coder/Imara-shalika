@@ -7,13 +7,13 @@ export const HappyCouple: React.FC = () => {
     <section
       className="w-full py-16 md:py-24 bg-[#121212] relative overflow-hidden flex items-center justify-center min-h-[100dvh]"
       style={{
-        backgroundImage: 'url("https://i.pinimg.com/736x/39/39/79/39397974439b6ac0833e39713841ceee.jpg")',
+        backgroundImage: 'url("/pre/WhatsApp Image 2026-08-14 at 20.52.37.jpeg")',
         backgroundSize: 'cover',
         backgroundPosition: 'center',
         backgroundRepeat: 'no-repeat'
       }}
     >
-      <div className="absolute inset-0 bg-black/30"></div>
+      <div className="absolute inset-0 bg-black/80"></div>
 
       <div className="container px-4 md:px-8 mx-auto relative z-10 flex flex-col items-center h-full justify-between max-w-4xl py-12">
 
@@ -28,13 +28,13 @@ export const HappyCouple: React.FC = () => {
           <h2 className="text-6xl sm:text-7xl md:text-8xl font-display text-[#D4AF37] leading-tight drop-shadow-lg" style={{ fontFamily: "'Great Vibes', cursive" }}>
             The Happy<br />Couple
           </h2>
-          <div className="text-black/90 text-base sm:text-xl md:text-2xl font-serif tracking-wide px-4 font-medium drop-shadow-md max-w-lg mx-auto leading-relaxed mt-4">
+          <div className="text-white/90 text-base sm:text-xl md:text-2xl font-serif tracking-wide px-4 font-medium drop-shadow-md max-w-lg mx-auto leading-relaxed mt-4">
             What began as a moment<br />became our forever
           </div>
-          <div className="flex items-center justify-center space-x-3 text-black/80 opacity-90 mt-4">
-            <div className="w-6 md:w-10 h-[1px] bg-black/60" />
+          <div className="flex items-center justify-center space-x-3 text-white/80 opacity-90 mt-4">
+            <div className="w-6 md:w-10 h-[1px] bg-white/60" />
             <Heart className="w-3 h-3 md:w-4 md:h-4 fill-transparent" strokeWidth={1.5} />
-            <div className="w-6 md:w-10 h-[1px] bg-black/60" />
+            <div className="w-6 md:w-10 h-[1px] bg-white/60" />
           </div>
         </motion.div>
 
@@ -51,7 +51,7 @@ export const HappyCouple: React.FC = () => {
           >
             <div className="w-[55%] sm:w-1/2 md:w-5/12 flex flex-col items-center text-center space-y-3 md:space-y-4">
               <h3 className="text-xl sm:text-3xl md:text-4xl font-serif text-white font-semibold leading-snug drop-shadow-md uppercase tracking-wider">
-                THENUKA<br />ARACHCHI
+                DANUJA<br />SILVA
               </h3>
               <div className="flex items-center justify-center space-x-2 w-full px-2">
                 <div className="h-[1px] bg-white/40 flex-1" />
@@ -61,7 +61,7 @@ export const HappyCouple: React.FC = () => {
                 <div className="h-[1px] bg-white/40 flex-1" />
               </div>
               <p className="text-white/80 font-serif font-medium text-[11px] sm:text-sm md:text-base tracking-wide drop-shadow-sm px-1">
-                Son of Mr &amp; Mrs Arachchi
+                Son of H Jayalath Silva &amp; J A Udayanganie priyadarshika
               </p>
             </div>
           </motion.div>
@@ -76,7 +76,7 @@ export const HappyCouple: React.FC = () => {
           >
             <div className="w-[55%] sm:w-1/2 md:w-5/12 flex flex-col items-center text-center space-y-3 md:space-y-4">
               <h3 className="text-xl sm:text-3xl md:text-4xl font-serif text-white font-semibold leading-snug drop-shadow-md uppercase tracking-wider">
-                SHALANI<br />ARACHCHI
+                THANIYA<br />APPUHAMI
               </h3>
               <div className="flex items-center justify-center space-x-2 w-full px-2">
                 <div className="h-[1px] bg-white/40 flex-1" />
@@ -86,7 +86,7 @@ export const HappyCouple: React.FC = () => {
                 <div className="h-[1px] bg-white/40 flex-1" />
               </div>
               <p className="text-white/80 font-serif font-medium text-[11px] sm:text-sm md:text-base tracking-wide drop-shadow-sm px-1">
-                Daughter of Mr &amp; Mrs. Dewanga Arachchi
+                Daughter of K A Gamini Appuhami &amp; M D R Geethani Silva
               </p>
             </div>
           </motion.div>

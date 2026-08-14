@@ -47,35 +47,31 @@ export const HomecomingDetails: React.FC = () => {
           <div className="space-y-2 mb-10">
             <p className="text-[11px] md:text-xs text-white/70 tracking-[0.3em] uppercase">Saturday</p>
             <p className="text-xl md:text-3xl font-serif text-[#D4AF37] tracking-widest uppercase">
-              12th December 2026
+              12th September 2026
             </p>
           </div>
 
           <div className="w-full max-w-sm mx-auto space-y-6 mb-12">
             <div className="flex items-center justify-between text-white border-b border-[#D4AF37]/20 pb-4">
-              <span className="font-sans text-sm md:text-base tracking-widest uppercase opacity-90">Registration</span>
-              <span className="font-serif text-[#D4AF37] text-lg md:text-xl">5:15 PM</span>
-            </div>
-            <div className="flex items-center justify-between text-white border-b border-[#D4AF37]/20 pb-4">
-              <span className="font-sans text-sm md:text-base tracking-widest uppercase opacity-90">Poruwa</span>
-              <span className="font-serif text-[#D4AF37] text-lg md:text-xl">6:02 PM</span>
+              <span className="font-sans text-sm md:text-base tracking-widest uppercase opacity-90">Welcome</span>
+              <span className="font-serif text-[#D4AF37] text-lg md:text-xl">7:00 PM</span>
             </div>
             <div className="flex items-center justify-between text-white border-b border-[#D4AF37]/20 pb-4">
               <span className="font-sans text-sm md:text-base tracking-widest uppercase opacity-90">Reception</span>
-              <span className="font-serif text-[#D4AF37] text-lg md:text-xl">6:30 PM</span>
+              <span className="font-serif text-[#D4AF37] text-lg md:text-xl">7:30 PM onwards</span>
             </div>
           </div>
 
           <div className="flex flex-col items-center space-y-3 mb-12">
             <MapPin className="w-6 h-6 md:w-8 md:h-8 text-[#D4AF37] mb-2 opacity-90" strokeWidth={1} />
-            <p className="text-xl md:text-2xl font-serif text-white tracking-wide">Shangri-La Hotel</p>
-            <p className="text-[11px] md:text-sm text-white/60 tracking-widest uppercase">Colombo</p>
+            <p className="text-xl md:text-2xl font-serif text-white tracking-wide">Senuri Grand Castello</p>
+            <p className="text-[11px] md:text-sm text-white/60 tracking-widest uppercase">Sri Lanka</p>
           </div>
 
           <a 
             target="_blank" 
             rel="noreferrer"
-            href="https://maps.app.goo.gl/vRqLnVGkasZwAqbx9?g_st=ic"
+            href="https://maps.app.goo.gl/sPhQ8ByTPagJzPES7?g_st=aw"
             className="group relative inline-flex items-center justify-center space-x-3 px-10 py-4 overflow-hidden rounded-full border border-[#D4AF37] bg-transparent transition-all duration-300 hover:bg-[#D4AF37] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]"
           >
             <span className="absolute inset-0 w-full h-full bg-[#D4AF37] opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>

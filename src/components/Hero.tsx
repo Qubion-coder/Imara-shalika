@@ -18,15 +18,11 @@ export const Hero: React.FC = () => {
         className="absolute inset-0 z-0 origin-center"
         style={{ y: y1, scale }}
       >
-        <video
-          autoPlay
-          muted
-          loop
-          playsInline
+        <img
+          src="/pre/WhatsApp Image 2026-08-14 at 20.52.32.jpeg"
+          alt="Hero Background"
           className="w-full h-full object-cover"
-        >
-          <source src="/Garden_viewed_through_stone_archway_202605041339.mp4" type="video/mp4" />
-        </video>
+        />
         {/* Subtle Dark Overlay to balance visibility and readability */}
         <div className="absolute inset-0 bg-black/30" />
       </motion.div>
@@ -48,9 +44,9 @@ export const Hero: React.FC = () => {
             Save the Date
           </motion.span>
           <h1 className="text-white text-4xl sm:text-7xl font-display tracking-widest drop-shadow-[0_10px_30px_rgba(0,0,0,1)] mb-4">
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">HIRUSHI</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">DANUJA</span>
             <span className="italic font-light text-brand-primary-light mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(70,130,180,0.5)]">&</span>
-            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">VISHWA</span>
+            <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">THANIYA</span>
           </h1>
           <motion.div 
             className="w-24 h-[1.5px] bg-gradient-to-r from-transparent via-brand-primary-light to-transparent mx-auto mt-4 mb-8 shadow-[0_0_20px_rgba(70,130,180,0.8)]"
@@ -64,7 +60,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
           >
-            22 . 07 . 2026
+            12 . 09 . 2026
           </motion.p>
           <motion.span
             className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-white/90 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
@@ -72,7 +68,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
-            Wennappuwa • Sri Jayawardenepura
+            Senuri Grand Castello
           </motion.span>
         </div>
       </motion.div>

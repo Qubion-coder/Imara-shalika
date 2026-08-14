@@ -16,12 +16,12 @@ export const HeroContent: React.FC = () => {
       {/* Background */}
       <div className="absolute inset-0 z-0">
         <img 
-          src="https://i.pinimg.com/736x/bc/dc/a3/bcdca375ec9b088f3e9a5770dd5d9653.jpg" 
+          src="/pre/WhatsApp Image 2026-08-14 at 20.52.32.jpeg" 
           alt="Wedding background" 
           className="h-full w-full object-cover" 
           loading="eager" 
         />
-        <div className="absolute inset-0 bg-black/20" />
+        <div className="absolute inset-0 bg-black/80" />
       </div>
 
       <div className="relative z-10 w-full h-full flex flex-col justify-center items-center px-4">
@@ -62,7 +62,7 @@ export const HeroContent: React.FC = () => {
           transition={{ duration: 1.5, delay: 0.5, ease: "easeOut" }}
         >
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Shalani
+            Thaniya
           </h1>
           
           <div className="my-1 sm:my-3 text-white opacity-90 drop-shadow-lg">
@@ -70,11 +70,11 @@ export const HeroContent: React.FC = () => {
           </div>
 
           <h1 className="text-6xl sm:text-7xl md:text-8xl font-display text-white drop-shadow-xl leading-tight" style={{ fontFamily: "'Great Vibes', cursive" }}>
-            Thenuka
+            Danuja
           </h1>
           
           <p className="text-sm sm:text-lg md:text-xl font-sans tracking-[0.1em] sm:tracking-[0.15em] text-white uppercase mt-12 sm:mt-16 drop-shadow-md">
-            Saturday, December 12, 2026
+            Saturday, September 12, 2026
           </p>
         </motion.div>
 
