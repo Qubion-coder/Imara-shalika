@@ -45,7 +45,7 @@ export const IntroOverlay: React.FC<IntroOverlayProps> = ({ onEnter }) => {
             className="relative z-10 w-full flex flex-col justify-end items-center pb-24 h-full gap-6"
           >
             {guestNameString && (
-              <div className="flex flex-col items-center justify-center bg-black/30 px-8 py-4 rounded-2xl backdrop-blur-sm border border-[#D4AF37]/20 mb-4">
+              <div className="absolute top-16 sm:relative sm:top-auto flex flex-col items-center justify-center bg-black/30 px-8 py-4 rounded-2xl backdrop-blur-sm border border-[#D4AF37]/20 mb-4 sm:mb-8 z-20">
                 <p className="text-[10px] sm:text-xs uppercase tracking-[0.3em] mb-2 font-sans text-white/90 drop-shadow-md text-center">
                   We cordially invite
                 </p>

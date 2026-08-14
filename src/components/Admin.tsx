@@ -38,7 +38,7 @@ export const Admin: React.FC = () => {
   return (
     <div className="min-h-screen bg-brand-ivory text-stone-800 p-6 md:p-12 font-sans flex items-center justify-center">
       <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-8 border border-[#D4AF37]/30">
-        <h1 className="text-3xl font-serif text-center mb-8 text-stone-800">Wedding Invitation Link Generator</h1>
+        <h1 className="text-3xl font-serif text-center mb-8 text-stone-800">Danuja & Thaniya's<br/>Wedding Invitation Link Generator</h1>
 
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">

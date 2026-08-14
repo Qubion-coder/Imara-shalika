@@ -28,7 +28,7 @@ export const HeroContent: React.FC = () => {
         
         {guestNameString && (
           <motion.div 
-            className="flex flex-col items-center justify-center mb-6 sm:mb-8 bg-black/30 px-8 py-4 rounded-2xl backdrop-blur-sm border border-[#D4AF37]/20"
+            className="absolute top-16 sm:relative sm:top-auto flex flex-col items-center justify-center bg-black/30 px-8 py-4 rounded-2xl backdrop-blur-sm border border-[#D4AF37]/20 mb-4 sm:mb-8 z-20"
             initial={{ opacity: 0, y: -20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 1 }}
