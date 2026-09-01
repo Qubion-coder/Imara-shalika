@@ -19,14 +19,14 @@ export const Celebration: React.FC = () => {
           </h2>
           <div className="flex items-center justify-center mt-4" aria-hidden="true">
             <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
-              <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-              <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#D4AF37" fillOpacity="0.3" />
-              <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#D4AF37" fillOpacity="0.3" />
-              <circle cx="110" cy="12" r="3" fill="#D4AF37" fillOpacity="0.9" />
-              <circle cx="110" cy="12" r="6" fill="none" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.45" />
-              <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
+              <line x1="0" y1="12" x2="86" y2="12" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.55" />
+              <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#FFFFFF" fillOpacity="0.65" />
+              <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#FFFFFF" fillOpacity="0.3" />
+              <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#FFFFFF" fillOpacity="0.3" />
+              <circle cx="110" cy="12" r="3" fill="#FFFFFF" fillOpacity="0.9" />
+              <circle cx="110" cy="12" r="6" fill="none" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.45" />
+              <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#FFFFFF" fillOpacity="0.65" />
+              <line x1="134" y1="12" x2="220" y2="12" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.55" />
             </svg>
           </div>
         </motion.div>
@@ -60,15 +60,15 @@ export const Celebration: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.8 }}
           >
-            <div className="absolute" style={{ width: "14px", height: "14px", top: "-1px", left: "-1px", borderTop: "1.5px solid #D4AF37", borderLeft: "1.5px solid #D4AF37" }} aria-hidden="true" />
-            <div className="absolute" style={{ width: "14px", height: "14px", top: "-1px", right: "-1px", borderTop: "1.5px solid #D4AF37", borderRight: "1.5px solid #D4AF37" }} aria-hidden="true" />
-            <div className="absolute" style={{ width: "14px", height: "14px", bottom: "-1px", left: "-1px", borderBottom: "1.5px solid #D4AF37", borderLeft: "1.5px solid #D4AF37" }} aria-hidden="true" />
-            <div className="absolute" style={{ width: "14px", height: "14px", bottom: "-1px", right: "-1px", borderBottom: "1.5px solid #D4AF37", borderRight: "1.5px solid #D4AF37" }} aria-hidden="true" />
+            <div className="absolute" style={{ width: "14px", height: "14px", top: "-1px", left: "-1px", borderTop: "1.5px solid #FFFFFF", borderLeft: "1.5px solid #FFFFFF" }} aria-hidden="true" />
+            <div className="absolute" style={{ width: "14px", height: "14px", top: "-1px", right: "-1px", borderTop: "1.5px solid #FFFFFF", borderRight: "1.5px solid #FFFFFF" }} aria-hidden="true" />
+            <div className="absolute" style={{ width: "14px", height: "14px", bottom: "-1px", left: "-1px", borderBottom: "1.5px solid #FFFFFF", borderLeft: "1.5px solid #FFFFFF" }} aria-hidden="true" />
+            <div className="absolute" style={{ width: "14px", height: "14px", bottom: "-1px", right: "-1px", borderBottom: "1.5px solid #FFFFFF", borderRight: "1.5px solid #FFFFFF" }} aria-hidden="true" />
             
             <h3 className="font-display text-2xl sm:text-3xl font-light italic mb-2" style={{ color: "#AA8000" }}>The Celebration</h3>
-            <div className="h-px w-10 mx-auto mb-5" style={{ background: "linear-gradient(90deg, transparent, #D4AF3788, transparent)" }} />
+            <div className="h-px w-10 mx-auto mb-5" style={{ background: "linear-gradient(90deg, transparent, #FFFFFF88, transparent)" }} />
             <div className="space-y-2.5 text-sm font-light leading-relaxed font-serif tracking-wide" style={{ color: "#444444" }}>
-              <p>Wednesday, 12<sup>th</sup> of August 2026</p>
+              <p>Saturday, 10<sup>th</sup> of October 2026</p>
               <p>From 9.00 a.m. to 4.15 p.m.</p>
               <p className="text-xs text-[#AA8000]">(Poruwa Ceremony at 9.07 a.m.)</p>
               <p className="mt-2">Lotus Ballroom - Asliya Golden Cassandra</p>

@@ -4,10 +4,10 @@ import { Sparkles } from 'lucide-react';
 
 export const ColorPalette: React.FC = () => {
   return (
-    <section id="color-palette" className="w-full py-24 relative overflow-hidden bg-[#000000]">
+    <section id="color-palette" className="w-full py-24 relative overflow-hidden bg-transparent">
       
       {/* Subtle Glow Effects */}
-      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-3/4 bg-[#D4AF37]/5 blur-[120px] rounded-full pointer-events-none"></div>
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full max-w-4xl h-3/4 bg-[#FFFFFF]/5 blur-[120px] rounded-full pointer-events-none"></div>
 
       <div className="container px-4 md:px-6 mx-auto relative z-10 flex flex-col items-center">
         
@@ -19,15 +19,15 @@ export const ColorPalette: React.FC = () => {
           viewport={{ once: true }}
           transition={{ duration: 0.8 }}
         >
-          <h2 className="text-6xl md:text-7xl font-display text-[#D4AF37] drop-shadow-md" style={{ fontFamily: "'Great Vibes', cursive" }}>
+          <h2 className="text-6xl md:text-7xl font-display text-[#FFFFFF] drop-shadow-md" style={{ fontFamily: "'Great Vibes', cursive" }}>
             Color Palette
           </h2>
           <div className="flex items-center space-x-4">
-            <div className="w-12 md:w-20 h-[1px] bg-gradient-to-r from-transparent to-[#D4AF37]/70"></div>
-            <Sparkles className="w-4 h-4 text-[#D4AF37] opacity-80" />
-            <div className="w-12 md:w-20 h-[1px] bg-gradient-to-l from-transparent to-[#D4AF37]/70"></div>
+            <div className="w-12 md:w-20 h-[1px] bg-gradient-to-r from-transparent to-[#FFFFFF]/70"></div>
+            <Sparkles className="w-4 h-4 text-[#FFFFFF] opacity-80" />
+            <div className="w-12 md:w-20 h-[1px] bg-gradient-to-l from-transparent to-[#FFFFFF]/70"></div>
           </div>
-          <p className="text-[11px] md:text-sm text-white/70 font-sans tracking-[0.2em] uppercase mt-6 max-w-2xl px-4 leading-relaxed">
+          <p className="text-[11px] md:text-sm text-stone-800 font-sans tracking-[0.2em] uppercase mt-6 max-w-2xl px-4 leading-relaxed">
             We kindly request our guests to dress in our chosen colors<br className="hidden sm:block" /> to create a beautiful aesthetic for our special day
           </p>
         </motion.div>
@@ -35,16 +35,16 @@ export const ColorPalette: React.FC = () => {
         {/* Elegant Image Container */}
         <div className="flex justify-center w-full max-w-5xl mx-auto px-4">
           <motion.div 
-            className="w-full relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-[40px] overflow-hidden bg-black/40 backdrop-blur-md p-4 md:p-6"
+            className="w-full relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] rounded-[40px] overflow-hidden bg-transparent backdrop-blur-md p-4 md:p-6"
             initial={{ opacity: 0, scale: 0.95, y: 40 }}
             whileInView={{ opacity: 1, scale: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 1, delay: 0.2 }}
           >
             {/* Elegant Border Wrapper */}
-            <div className="absolute inset-0 border border-[#D4AF37]/30 rounded-[40px] pointer-events-none m-2"></div>
+            <div className="absolute inset-0 border border-[#FFFFFF]/30 rounded-[40px] pointer-events-none m-2"></div>
             
-            <div className="relative z-10 w-full overflow-hidden rounded-[28px] border border-[#D4AF37]/20 shadow-inner">
+            <div className="relative z-10 w-full overflow-hidden rounded-[28px] border border-[#FFFFFF]/20 shadow-inner">
               <img 
                 src="/colorpalette_new.jpeg" 
                 alt="Wedding Color Palette" 

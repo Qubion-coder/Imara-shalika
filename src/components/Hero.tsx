@@ -19,12 +19,12 @@ export const Hero: React.FC = () => {
         style={{ y: y1, scale }}
       >
         <img
-          src="/pre/WhatsApp Image 2026-08-14 at 20.52.32.jpeg"
-          alt="Hero Background"
+          src="/ChatGPT Image Sep 2, 2026, 01_40_42 AM.png"
+          alt="Wedding Hero Background"
           className="w-full h-full object-cover"
         />
         {/* Subtle Dark Overlay to balance visibility and readability */}
-        <div className="absolute inset-0 bg-black/30" />
+        <div className="absolute inset-0 bg-transparent" />
       </motion.div>
 
       {/* Central Content with Highlight Background */}
@@ -34,16 +34,16 @@ export const Hero: React.FC = () => {
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 1, duration: 1.5 }}
       >
-        <div className="relative inline-block px-8 py-10 sm:px-16 sm:py-16 bg-white/5 backdrop-blur-[4px] rounded-[3rem] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
+        <div className="relative inline-block px-8 py-10 sm:px-16 sm:py-16 bg-transparent5 backdrop-blur-[4px] rounded-[3rem] border border-white/10 shadow-[0_20px_50px_rgba(0,0,0,0.3)]">
           <motion.span 
-            className="text-[10px] sm:text-xs uppercase tracking-[0.8em] text-white font-bold mb-6 block drop-shadow-[0_4px_12px_rgba(0,0,0,1)]"
+            className="text-[10px] sm:text-xs uppercase tracking-[0.8em] text-stone-800 font-bold mb-6 block drop-shadow-[0_4px_12px_rgba(0,0,0,1)]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 1.5, duration: 1 }}
           >
             Save the Date
           </motion.span>
-          <h1 className="text-white text-4xl sm:text-7xl font-display tracking-widest drop-shadow-[0_10px_30px_rgba(0,0,0,1)] mb-4">
+          <h1 className="text-stone-800 text-4xl sm:text-7xl font-display tracking-widest drop-shadow-[0_10px_30px_rgba(0,0,0,1)] mb-4">
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">DANUJA</span>
             <span className="italic font-light text-brand-primary-light mx-4 sm:mx-6 drop-shadow-[0_0_15px_rgba(70,130,180,0.5)]">&</span>
             <span className="bg-clip-text text-transparent bg-gradient-to-b from-white via-white to-blue-100">THANIYA</span>
@@ -55,20 +55,20 @@ export const Hero: React.FC = () => {
             transition={{ delay: 2, duration: 1 }}
           />
           <motion.p
-            className="text-white font-serif italic text-lg sm:text-xl tracking-[0.2em] drop-shadow-[0_8px_16px_rgba(0,0,0,1)]"
+            className="text-stone-800 font-serif italic text-lg sm:text-xl tracking-[0.2em] drop-shadow-[0_8px_16px_rgba(0,0,0,1)]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2.2, duration: 1 }}
           >
-            12 . 09 . 2026
+            10 . 10 . 2026
           </motion.p>
           <motion.span
-            className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-white/90 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
+            className="text-[9px] sm:text-[10px] uppercase tracking-[0.4em] text-stone-800 font-medium mt-10 block drop-shadow-[0_2px_8px_rgba(0,0,0,0.8)]"
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 2.5, duration: 1 }}
           >
-            Senuri Grand Castello
+            Crown Regency Hotel, Badulla
           </motion.span>
         </div>
       </motion.div>

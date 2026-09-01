@@ -30,7 +30,7 @@ export default function App() {
   const [isMusicPlaying, setIsMusicPlaying] = useState(false);
   const audioRef = useRef<HTMLAudioElement | null>(null);
 
-  const weddingDate = new Date('2026-09-12T19:00:00');
+  const weddingDate = new Date('2026-10-10T18:30:00');
 
   const startMusic = () => {
     if (audioRef.current && !isMusicPlaying) {
@@ -70,7 +70,7 @@ export default function App() {
   }, [isMusicPlaying]);
 
   return (
-    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-white overflow-x-hidden bg-brand-ivory">
+    <div className="relative min-h-screen font-sans selection:bg-brand-gold selection:text-stone-800 overflow-x-hidden bg-brand-ivory">
       <FloatingPetals />
       
       {/* Background Music */}

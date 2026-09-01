@@ -13,7 +13,7 @@ export const Admin: React.FC = () => {
     ? `${baseUrl}?prefix=${encodeURIComponent(prefix)}&name=${encodeURIComponent(guestName.trim())}`
     : baseUrl;
 
-  const generatedMessage = `Dear ${prefix} ${guestName.trim()} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${generatedLink}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Danuja & Thaniya`;
+  const generatedMessage = `Dear ${prefix} ${guestName.trim()} ❤️\n\nWith joyful hearts, we warmly invite you to celebrate one of the most special days of our lives as we begin our journey together.\n\nPlease view our wedding invitation and all the event details through the link below 🌐:\n\n${generatedLink}\n\nYour presence would truly mean the world to us, and we would be honored to celebrate this beautiful moment together.\n\nWith love,\n❤️ Shalika & Imara`;
 
   const handleCopyLink = async () => {
     try {
@@ -37,8 +37,8 @@ export const Admin: React.FC = () => {
 
   return (
     <div className="min-h-screen bg-brand-ivory text-stone-800 p-6 md:p-12 font-sans flex items-center justify-center">
-      <div className="max-w-2xl w-full bg-white rounded-3xl shadow-xl p-8 border border-[#D4AF37]/30">
-        <h1 className="text-3xl font-serif text-center mb-8 text-stone-800">Danuja & Thaniya's<br/>Wedding Invitation Link Generator</h1>
+      <div className="max-w-2xl w-full bg-transparent rounded-3xl shadow-xl p-8 border border-[#FFFFFF]/30">
+        <h1 className="text-3xl font-serif text-center mb-8 text-stone-800">Shalika & Imara's<br />Wedding Invitation Link Generator</h1>
 
         <div className="space-y-6">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
@@ -47,7 +47,7 @@ export const Admin: React.FC = () => {
               <select
                 value={prefix}
                 onChange={(e) => setPrefix(e.target.value)}
-                className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] outline-none transition-all"
+                className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 focus:border-[#FFFFFF] focus:ring-1 focus:ring-[#FFFFFF] outline-none transition-all"
               >
                 <option value="Mr.">Mr.</option>
                 <option value="Mrs.">Mrs.</option>
@@ -67,7 +67,7 @@ export const Admin: React.FC = () => {
                 placeholder="e.g. Sanjaya"
                 value={guestName}
                 onChange={(e) => setGuestName(e.target.value)}
-                className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 focus:border-[#D4AF37] focus:ring-1 focus:ring-[#D4AF37] outline-none transition-all"
+                className="w-full h-12 px-4 rounded-xl border border-stone-200 bg-stone-50 focus:border-[#FFFFFF] focus:ring-1 focus:ring-[#FFFFFF] outline-none transition-all"
               />
             </div>
           </div>
@@ -84,7 +84,7 @@ export const Admin: React.FC = () => {
                 />
                 <button
                   onClick={handleCopyLink}
-                  className="h-12 px-6 flex items-center justify-center gap-2 bg-stone-800 hover:bg-black text-[#D4AF37] rounded-xl font-medium transition-all sm:min-w-[140px]"
+                  className="h-12 px-6 flex items-center justify-center gap-2 bg-stone-800 hover:bg-black text-[#FFFFFF] rounded-xl font-medium transition-all sm:min-w-[140px]"
                 >
                   {linkCopied ? <Check className="w-4 h-4" /> : <LinkIcon className="w-4 h-4" />}
                   {linkCopied ? 'Copied!' : 'Copy Link'}
@@ -102,7 +102,7 @@ export const Admin: React.FC = () => {
               />
               <button
                 onClick={handleCopyMessage}
-                className="w-full h-12 mt-2 flex items-center justify-center gap-2 bg-[#D4AF37] hover:bg-[#C5A030] text-white rounded-xl font-medium shadow-lg hover:shadow-xl transition-all"
+                className="w-full h-12 mt-2 flex items-center justify-center gap-2 bg-[#FFFFFF] hover:bg-[#C5A030] text-stone-800 rounded-xl font-medium shadow-lg hover:shadow-xl transition-all"
               >
                 {messageCopied ? <Check className="w-5 h-5" /> : <FileText className="w-5 h-5" />}
                 {messageCopied ? 'Message Copied!' : 'Copy Full Message'}

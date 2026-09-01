@@ -16,11 +16,14 @@
   --color-brand-primary-muted: #666666;
   
   --color-brand-champagne: #F7E7CE; /* Champagne Gold / Ivory blend */
-  --color-brand-ivory: #FFFFF0; /* Ivory */
+  --color-brand-ivory: #8B0000; /* Changed to Dark Red for theme */
   --color-brand-pink: #000000;
   --color-brand-white: #FFFFFF;
   --color-brand-accent: #333333;
   --color-brand-dark: #000000;
+
+  /* Override text color to white for text-stone-800 */
+  --color-stone-800: #ffffff;
 
   /* Church Theme */
   --color-church-primary: #8F9779;

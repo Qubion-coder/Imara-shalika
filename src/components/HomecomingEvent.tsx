@@ -35,29 +35,29 @@ export const HomecomingEvent: React.FC = () => {
                 
                 {/* Event Location & Date */}
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
                     <Calendar className="w-5 h-5 text-homecoming-primary" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">Saturday, September 12</h4>
-                    <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Senuri Grand Castello</p>
+                    <h4 className="font-serif text-2xl sm:text-3xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">Saturday, October 10</h4>
+                    <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Crown Regency Hotel, Badulla</p>
                   </div>
                 </div>
 
                 {/* Timeline Items */}
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-homecoming-light" />
                   </div>
                   <div>
-                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">07:00 PM</h4>
+                    <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">06:30 PM</h4>
                     <p className="text-stone-500/80 text-[10px] sm:text-[11px] uppercase tracking-[0.2em] font-bold">Welcome & Drinks</p>
                   </div>
                 </div>
 
                 <div className="relative group">
                   <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-homecoming-primary rounded-full border border-homecoming-primary shadow-md flex items-center justify-center transform group-hover:scale-110 transition-all duration-500">
-                    <Heart className="w-5 h-5 text-white" />
+                    <Heart className="w-5 h-5 text-stone-800" />
                   </div>
                   <div>
                     <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-homecoming-primary transition-colors duration-500">08:00 PM</h4>
@@ -66,7 +66,7 @@ export const HomecomingEvent: React.FC = () => {
                 </div>
 
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-homecoming-light" />
                   </div>
                   <div>
@@ -76,7 +76,7 @@ export const HomecomingEvent: React.FC = () => {
                 </div>
 
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-homecoming-primary/30 shadow-sm flex items-center justify-center group-hover:border-homecoming-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-homecoming-light" />
                   </div>
                   <div>
@@ -114,7 +114,7 @@ export const HomecomingEvent: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
-                className="absolute -bottom-6 sm:-bottom-10 -left-2 sm:-left-12 bg-white/95 backdrop-blur-xl p-4 sm:p-8 shadow-xl rounded-2xl max-w-[200px] sm:max-w-[280px] border border-homecoming-light/30"
+                className="absolute -bottom-6 sm:-bottom-10 -left-2 sm:-left-12 bg-transparent backdrop-blur-xl p-4 sm:p-8 shadow-xl rounded-2xl max-w-[200px] sm:max-w-[280px] border border-homecoming-light/30"
               >
                 <div className="absolute inset-x-8 -top-px h-[2px] bg-gradient-to-r from-transparent via-homecoming-primary/60 to-transparent" />
                 <Sparkles className="w-5 h-5 text-homecoming-primary mb-3" />

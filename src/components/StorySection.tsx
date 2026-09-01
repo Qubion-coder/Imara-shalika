@@ -5,7 +5,7 @@ import { Heart } from 'lucide-react';
 export const StorySection: React.FC = () => {
   return (
     <div className="w-full flex justify-center bg-oldmoney-cream/10">
-      <div className="w-full bg-white px-6 py-16 flex flex-col items-center relative shadow-md rounded-b-3xl">
+      <div className="w-full bg-transparent px-6 py-16 flex flex-col items-center relative shadow-md rounded-b-3xl">
         
         {/* Subtle background text or icon */}
         <div className="absolute top-10 right-10 pointer-events-none opacity-5">
@@ -55,7 +55,7 @@ export const StorySection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: "easeOut" }}
             whileHover={{ scale: 1.05, rotate: -2, zIndex: 10 }}
-            className="absolute left-1 top-4 bg-white p-2 pb-6 w-[150px] shadow-[5px_10px_20px_rgba(97,75,68,0.12)] border border-oldmoney-cream/50 pointer-events-auto cursor-pointer"
+            className="absolute left-1 top-4 bg-transparent p-2 pb-6 w-[150px] shadow-[5px_10px_20px_rgba(97,75,68,0.12)] border border-oldmoney-cream/50 pointer-events-auto cursor-pointer"
           >
             {/* Paper clip decor on Polaroid */}
             <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-5 h-8 border-2 border-oldmoney-taupe/40 rounded-full polaroid-clip opacity-90 rotate-12" />
@@ -82,7 +82,7 @@ export const StorySection: React.FC = () => {
             viewport={{ once: true }}
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
             whileHover={{ scale: 1.05, rotate: 2, zIndex: 10 }}
-            className="absolute right-1 bottom-4 bg-white p-2 pb-6 w-[150px] shadow-[8px_12px_25px_rgba(97,75,68,0.15)] border border-oldmoney-cream/50 pointer-events-auto cursor-pointer"
+            className="absolute right-1 bottom-4 bg-transparent p-2 pb-6 w-[150px] shadow-[8px_12px_25px_rgba(97,75,68,0.15)] border border-oldmoney-cream/50 pointer-events-auto cursor-pointer"
           >
             {/* Elegant tiny piece of gold washi tape */}
             <div className="absolute -top-2 left-6 right-6 h-3 bg-oldmoney-taupe/20 border-b border-oldmoney-taupe/10 -rotate-3" />

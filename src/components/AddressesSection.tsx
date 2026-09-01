@@ -20,7 +20,7 @@ export const AddressesSection: React.FC = () => {
       title: 'Poruwa & Reception',
       name: 'Monarch Imperial',
       address: '31A New Hospital Rd, Sri Jayawardenepura',
-      note: 'Ceremony begins at 04:30 PM',
+      note: 'Ceremony begins at 06:30 PM',
     },
     homecoming: {
       title: 'The Wedding',
@@ -31,7 +31,7 @@ export const AddressesSection: React.FC = () => {
 
   return (
     <div className="w-full flex justify-center bg-oldmoney-cream/10">
-      <div className="w-full bg-oldmoney-brown text-white px-6 py-16 flex flex-col items-center shadow-md rounded-3xl relative overflow-hidden">
+      <div className="w-full bg-oldmoney-brown text-stone-800 px-6 py-16 flex flex-col items-center shadow-md rounded-3xl relative overflow-hidden">
         
 
 
@@ -73,7 +73,7 @@ export const AddressesSection: React.FC = () => {
               <span className="font-serif italic text-lg text-oldmoney-taupe font-medium block">
                 {addressesData.church.title}
               </span>
-              <strong className="font-serif text-sm block mt-0.5 font-semibold text-white/95">
+              <strong className="font-serif text-sm block mt-0.5 font-semibold text-stone-800">
                 {addressesData.church.name}
               </strong>
               <p className="font-serif text-xs leading-relaxed text-oldmoney-cream/70 font-light mt-1">
@@ -84,7 +84,7 @@ export const AddressesSection: React.FC = () => {
               <button
                 onClick={() => handleGetDirections(`${addressesData.church.name}, ${addressesData.church.address}`)}
                 id="btn-nav-church"
-                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-white transition-colors duration-300 font-semibold cursor-pointer"
+                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-stone-800 transition-colors duration-300 font-semibold cursor-pointer"
               >
                 <Navigation className="w-3 h-3 text-oldmoney-taupe" />
                 Get Directions
@@ -109,7 +109,7 @@ export const AddressesSection: React.FC = () => {
               <span className="font-serif italic text-lg text-oldmoney-taupe font-medium block">
                 {addressesData.poruwa.title}
               </span>
-              <strong className="font-serif text-sm block mt-0.5 font-semibold text-white/95">
+              <strong className="font-serif text-sm block mt-0.5 font-semibold text-stone-800">
                 {addressesData.poruwa.name}
               </strong>
               <p className="font-serif text-xs leading-relaxed text-oldmoney-cream/70 font-light mt-1">
@@ -124,7 +124,7 @@ export const AddressesSection: React.FC = () => {
               <button
                 onClick={() => handleGetDirections(`${addressesData.poruwa.name}, ${addressesData.poruwa.address}`)}
                 id="btn-nav-poruwa"
-                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-white transition-colors duration-300 font-semibold cursor-pointer"
+                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-stone-800 transition-colors duration-300 font-semibold cursor-pointer"
               >
                 <Navigation className="w-3 h-3 text-oldmoney-taupe" />
                 Get Directions
@@ -148,7 +148,7 @@ export const AddressesSection: React.FC = () => {
               <span className="font-serif italic text-lg text-oldmoney-taupe font-medium block">
                 {addressesData.homecoming.title}
               </span>
-              <strong className="font-serif text-sm block mt-0.5 font-semibold text-white/95">
+              <strong className="font-serif text-sm block mt-0.5 font-semibold text-stone-800">
                 {addressesData.homecoming.name}
               </strong>
               <p className="font-serif text-xs leading-relaxed text-oldmoney-cream/70 font-light mt-1">
@@ -159,7 +159,7 @@ export const AddressesSection: React.FC = () => {
               <button
                 onClick={() => handleGetDirections(`${addressesData.homecoming.name}, ${addressesData.homecoming.address}`)}
                 id="btn-nav-homecoming"
-                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-white transition-colors duration-300 font-semibold cursor-pointer"
+                className="mt-2.5 flex items-center gap-1 text-[10px] uppercase font-sans tracking-widest text-oldmoney-taupe hover:text-stone-800 transition-colors duration-300 font-semibold cursor-pointer"
               >
                 <Navigation className="w-3 h-3 text-oldmoney-taupe" />
                 Get Directions

@@ -40,7 +40,7 @@ export const Gallery: React.FC = () => {
   return (
     <section id="gallery" aria-label="Our Gallery" className="relative overflow-hidden pt-24 pb-4 sm:py-32 px-4 sm:px-6 bg-[#FFFFF0] text-stone-800">
       <div className="pointer-events-none absolute inset-0 opacity-100" style={{ background: "radial-gradient(ellipse 75% 58% at 18% 28%, rgba(232,197,71,0.16) 0%, transparent 52%), radial-gradient(ellipse 50% 48% at 90% 72%, rgba(212,175,55,0.1) 0%, transparent 50%)" }} />
-      <div className="pointer-events-none absolute -left-1/4 top-0 h-[min(60vw,480px)] w-[min(60vw,480px)] rounded-full blur-3xl opacity-30 bg-[#D4AF37]" />
+      <div className="pointer-events-none absolute -left-1/4 top-0 h-[min(60vw,480px)] w-[min(60vw,480px)] rounded-full blur-3xl opacity-30 bg-[#FFFFFF]" />
       
       <div className="relative mx-auto max-w-6xl">
         <motion.div 
@@ -53,14 +53,14 @@ export const Gallery: React.FC = () => {
           <p className="font-serif text-3xl sm:text-4xl mb-3" style={{ color: "#AA8000" }}>Our Gallery</p>
           <div className="flex items-center justify-center sm:justify-start mb-6" aria-hidden="true">
             <svg className="w-full max-w-[220px] sm:max-w-sm md:max-w-md" viewBox="0 0 220 24" preserveAspectRatio="xMidYMid meet" fill="none">
-              <line x1="0" y1="12" x2="86" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
-              <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#D4AF37" fillOpacity="0.3" />
-              <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#D4AF37" fillOpacity="0.3" />
-              <circle cx="110" cy="12" r="3" fill="#D4AF37" fillOpacity="0.9" />
-              <circle cx="110" cy="12" r="6" fill="none" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.45" />
-              <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#D4AF37" fillOpacity="0.65" />
-              <line x1="134" y1="12" x2="220" y2="12" stroke="#D4AF37" strokeWidth="0.75" strokeOpacity="0.55" />
+              <line x1="0" y1="12" x2="86" y2="12" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.55" />
+              <polygon points="89,12 92.5,8.5 96,12 92.5,15.5" fill="#FFFFFF" fillOpacity="0.65" />
+              <ellipse cx="110" cy="12" rx="2.5" ry="8.5" fill="#FFFFFF" fillOpacity="0.3" />
+              <ellipse cx="110" cy="12" rx="8.5" ry="2.5" fill="#FFFFFF" fillOpacity="0.3" />
+              <circle cx="110" cy="12" r="3" fill="#FFFFFF" fillOpacity="0.9" />
+              <circle cx="110" cy="12" r="6" fill="none" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.45" />
+              <polygon points="124,12 127.5,8.5 131,12 127.5,15.5" fill="#FFFFFF" fillOpacity="0.65" />
+              <line x1="134" y1="12" x2="220" y2="12" stroke="#FFFFFF" strokeWidth="0.75" strokeOpacity="0.55" />
             </svg>
           </div>
           <h2 className="font-display text-3xl sm:text-4xl md:text-[2.85rem] font-light italic" style={{ color: "#333333" }}>

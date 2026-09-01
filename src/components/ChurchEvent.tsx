@@ -35,7 +35,7 @@ export const ChurchEvent: React.FC = () => {
                 
                 {/* Event Location & Date */}
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
                     <Calendar className="w-5 h-5 text-church-primary" />
                   </div>
                   <div>
@@ -46,7 +46,7 @@ export const ChurchEvent: React.FC = () => {
 
                 {/* Timeline Items */}
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-church-light" />
                   </div>
                   <div>
@@ -57,7 +57,7 @@ export const ChurchEvent: React.FC = () => {
 
                 <div className="relative group">
                   <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-church-primary rounded-full border border-church-primary shadow-md flex items-center justify-center transform group-hover:scale-110 transition-all duration-500">
-                    <Heart className="w-5 h-5 text-white" />
+                    <Heart className="w-5 h-5 text-stone-800" />
                   </div>
                   <div>
                     <h4 className="font-serif text-xl sm:text-2xl text-stone-800 mb-1 group-hover:text-church-primary transition-colors duration-500">11:30 AM</h4>
@@ -66,7 +66,7 @@ export const ChurchEvent: React.FC = () => {
                 </div>
 
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-church-light" />
                   </div>
                   <div>
@@ -76,7 +76,7 @@ export const ChurchEvent: React.FC = () => {
                 </div>
 
                 <div className="relative group">
-                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-white rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
+                  <div className="absolute top-1/2 -translate-y-1/2 -left-[64px] sm:-left-[74px] w-12 h-12 bg-transparent rounded-full border border-church-primary/30 shadow-sm flex items-center justify-center group-hover:border-church-primary transition-all duration-500">
                     <Clock className="w-5 h-5 text-church-light" />
                   </div>
                   <div>
@@ -113,7 +113,7 @@ export const ChurchEvent: React.FC = () => {
                 whileInView={{ opacity: 1, x: 0, y: 0 }}
                 viewport={{ once: true }}
                 transition={{ delay: 0.6, duration: 1, ease: "easeOut" }}
-                className="absolute -bottom-6 sm:-bottom-10 -left-2 sm:-left-12 bg-white/95 backdrop-blur-xl p-4 sm:p-8 shadow-xl rounded-2xl max-w-[200px] sm:max-w-[280px] border border-church-light/30"
+                className="absolute -bottom-6 sm:-bottom-10 -left-2 sm:-left-12 bg-transparent backdrop-blur-xl p-4 sm:p-8 shadow-xl rounded-2xl max-w-[200px] sm:max-w-[280px] border border-church-light/30"
               >
                 <div className="absolute inset-x-8 -top-px h-[2px] bg-gradient-to-r from-transparent via-church-primary/60 to-transparent" />
                 <Sparkles className="w-5 h-5 text-church-primary mb-3" />

@@ -55,12 +55,12 @@ export const IntroVideo: React.FC<IntroVideoProps> = ({ onComplete }) => {
                   ? { delay: index * 0.4, duration: 1.2, type: "spring", bounce: 0.3 }
                   : { duration: 1, ease: "easeInOut" } // Exit simultaneously
               }}
-              className="absolute w-64 h-80 sm:w-[28rem] sm:h-[36rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-white p-3 sm:p-5 pb-8 sm:pb-12 rounded-sm"
+              className="absolute w-64 h-80 sm:w-[28rem] sm:h-[36rem] shadow-[0_20px_50px_rgba(0,0,0,0.5)] bg-transparent p-3 sm:p-5 pb-8 sm:pb-12 rounded-sm"
               style={{ zIndex: index + 10 }}
             >
               <div className="w-full h-full relative overflow-hidden rounded-sm">
                 <img src={src} alt={`Intro ${index}`} className="w-full h-full object-cover" />
-                <div className="absolute inset-0 bg-black/10" />
+                <div className="absolute inset-0 bg-transparent" />
               </div>
             </motion.div>
           );

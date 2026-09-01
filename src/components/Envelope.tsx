@@ -79,9 +79,9 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                 </div>
 
                 <h2 className="text-3xl sm:text-5xl font-display font-medium text-[#4a5770] tracking-tight leading-[1.1] mb-2 sm:mb-3 drop-shadow-sm">
-                  Dimalka <br />
+                  Imara <br />
                   <span className="text-xl sm:text-3xl text-[#cccccc] italic font-light my-1 block">&</span>
-                  Dinindu
+                  Shalika
                 </h2>
 
                 <div className="w-16 sm:w-24 h-[2px] bg-gradient-to-r from-transparent via-[#cccccc] to-transparent mx-auto my-3 sm:my-5" />
@@ -162,7 +162,7 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
 
             {/* Traditional Ornamental Band/Wrap - Gold Metallic */}
             <motion.div
-              className="absolute top-[35%] left-[-2%] w-[104%] h-[20%] bg-gradient-to-r from-[#8a6811] via-[#d4af37] to-[#8a6811] z-25 pointer-events-none shadow-[0_10px_30px_rgba(50,0,10,0.5)] border-y-[3px] border-[#fde592] flex items-center justify-center overflow-hidden"
+              className="absolute top-[35%] left-[-2%] w-[104%] h-[20%] bg-gradient-to-r from-[#8a6811] via-[#8B0000] to-[#8a6811] z-25 pointer-events-none shadow-[0_10px_30px_rgba(50,0,10,0.5)] border-y-[3px] border-[#fde592] flex items-center justify-center overflow-hidden"
               initial={{ opacity: 1 }}
               animate={isOpened ? { opacity: 0, scale: 1.05 } : {}}
               transition={{ duration: 0.6, ease: "easeOut" }}
@@ -192,20 +192,20 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   <div className="absolute inset-0 rounded-full bg-gradient-to-br from-brand-primary-muted via-brand-primary to-brand-primary-deep border border-brand-primary-deep shadow-[inset_0_4px_10px_rgba(70,130,180,0.8),inset_0_-4px_15px_rgba(29,53,87,0.9)]" />
 
                   {/* Wax ridge ring - Gold infused edge */}
-                  <div className="absolute inset-2 sm:inset-3 rounded-full border-[3px] border-[#d4af37]/60 shadow-[inset_0_2px_5px_rgba(50,0,10,0.8),0_2px_4px_rgba(212,175,55,0.4)] mix-blend-screen" />
+                  <div className="absolute inset-2 sm:inset-3 rounded-full border-[3px] border-[#8B0000]/60 shadow-[inset_0_2px_5px_rgba(50,0,10,0.8),0_2px_4px_rgba(212,175,55,0.4)] mix-blend-screen" />
 
                   {/* Decorative Outer Border Detail for the Seal */}
-                  <div className="absolute inset-1 rounded-full border-[1.5px] border-dotted border-[#d4af37]/80 pointer-events-none animate-[spin_60s_linear_infinite]" />
+                  <div className="absolute inset-1 rounded-full border-[1.5px] border-dotted border-[#8B0000]/80 pointer-events-none animate-[spin_60s_linear_infinite]" />
 
                   <div className="relative flex flex-col items-center justify-center translate-y-[-2px]">
-                    <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      D
+                    <span className="text-[#8B0000] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
+                      I
                     </span>
-                    <span className="text-[#d4af37]/70 font-serif text-sm sm:text-base mx-0.5 font-light drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)] my-[-6px]">
+                    <span className="text-[#8B0000]/70 font-serif text-sm sm:text-base mx-0.5 font-light drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)] my-[-6px]">
                       &
                     </span>
-                    <span className="text-[#d4af37] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
-                      D
+                    <span className="text-[#8B0000] font-serif text-3xl sm:text-4xl italic tracking-tighter drop-shadow-[0_2px_4px_rgba(50,0,10,0.9)]">
+                      S
                     </span>
                   </div>
 
@@ -230,11 +230,11 @@ export const Envelope: React.FC<EnvelopeProps> = ({ onComplete }) => {
                   <p className="text-[#fffdf9] font-serif italic text-2xl sm:text-4xl font-light tracking-wide text-shadow-xl drop-shadow-[0_8px_16px_rgba(10,20,50,0.8)]">
                     Royal Sri Lankan Invitation
                   </p>
-                  <p className="text-[#d4af37] font-sans text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold drop-shadow-md">
+                  <p className="text-[#8B0000] font-sans text-[10px] sm:text-xs tracking-[0.5em] uppercase font-bold drop-shadow-md">
                     Break the seal to reveal
                   </p>
                 </div>
-                <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-b from-[#d4af37] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
+                <div className="w-[1.5px] h-16 sm:h-20 bg-gradient-to-b from-[#8B0000] to-transparent animate-[bounce_2s_infinite] shadow-[0_0_20px_rgba(212,175,55,0.6)]" />
               </motion.div>
             )}
           </AnimatePresence>

@@ -3,7 +3,7 @@ import { motion } from 'motion/react';
 import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 
 export const Location: React.FC = () => {
-   const venueAddress = "Senuri Grand Castello";
+   const venueAddress = "Crown Regency Hotel, Badulla";
   const mapUrl = `https://maps.google.com/maps?q=Senuri%20Grand%20Castello&t=&z=15&ie=UTF8&iwloc=&output=embed`;
   const liveLocationUrl = "https://maps.app.goo.gl/sPhQ8ByTPagJzPES7?g_st=aw";
 
@@ -40,7 +40,7 @@ export const Location: React.FC = () => {
             />
 
             {/* Decorative Location Pin Overlay */}
-            <div className="absolute top-6 right-6 bg-white/90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-gold/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
+            <div className="absolute top-6 right-6 bg-transparent90 backdrop-blur-md px-4 py-2 rounded-full border border-brand-gold/30 shadow-lg flex items-center gap-2 pointer-events-none z-30">
               <Map className="w-4 h-4 text-brand-gold-deep animate-pulse" />
               <span className="text-[9px] uppercase tracking-widest font-bold text-stone-600">Live Map</span>
             </div>
