@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { submitToGoogleSheet } from '../googleSheets';
 import { Calendar, Sparkles } from 'lucide-react';
 import { motion } from 'motion/react';
@@ -10,6 +10,16 @@ export const RSVPForm: React.FC = () => {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
+
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    const urlName = params.get('name');
+    const urlPrefix = params.get('prefix');
+    
+    if (urlName) {
+      setName(urlPrefix ? `${urlPrefix} ${urlName}` : urlName);
+    }
+  }, []);
 
   const handleRSVP = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -94,7 +104,7 @@ export const RSVPForm: React.FC = () => {
                       type="text" 
                       required 
                       placeholder="Eg: Kasun Silva" 
-                      className="w-full bg-transparent text-stone-800 border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all placeholder:text-stone-800"
+                      className="w-full bg-transparent text-white border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all placeholder:text-white/60"
                       name="name" 
                       value={name}
                       onChange={(e) => setName(e.target.value)}
@@ -109,12 +119,12 @@ export const RSVPForm: React.FC = () => {
                         required 
                         value={attending}
                         onChange={(e) => setAttending(e.target.value)}
-                        className="w-full bg-transparent text-stone-800 border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans appearance-none pr-10 focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all"
+                        className="w-full bg-transparent text-white border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans appearance-none pr-10 focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all"
                         disabled={isSubmitting}
                       >
-                        <option value="" disabled className="bg-transparent text-stone-800">Select an option</option>
-                        <option value="yes" className="bg-transparent text-stone-800">Yes, I'll be there</option>
-                        <option value="no" className="bg-transparent text-stone-800">Sorry, I can't make it</option>
+                        <option value="" disabled style={{ color: 'black', backgroundColor: 'white' }}>Select an option</option>
+                        <option value="yes" style={{ color: 'black', backgroundColor: 'white' }}>Yes, I'll be there</option>
+                        <option value="no" style={{ color: 'black', backgroundColor: 'white' }}>Sorry, I can't make it</option>
                       </select>
                       <svg className="w-5 h-5 absolute right-4 top-1/2 transform -translate-y-1/2 text-[#FFFFFF] pointer-events-none" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                         <path strokeLinecap="round" strokeLinejoin="round" d="M19 9l-7 7-7-7"></path>
@@ -129,7 +139,7 @@ export const RSVPForm: React.FC = () => {
                     name="message" 
                     maxLength={250} 
                     rows={4} 
-                    className="w-full bg-transparent text-stone-800 border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all placeholder:text-stone-800 resize-none" 
+                    className="w-full bg-transparent text-white border border-[#FFFFFF]/40 rounded-xl px-5 py-4 font-sans focus:ring-1 focus:ring-[#FFFFFF] focus:border-[#FFFFFF] outline-none transition-all placeholder:text-white/60 resize-none" 
                     placeholder="Leave the couple a beautiful note!"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}

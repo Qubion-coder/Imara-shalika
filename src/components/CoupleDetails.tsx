@@ -38,7 +38,7 @@ export const CoupleDetails: React.FC = () => {
           <div className="mb-4 flex flex-col items-center lg:items-end">
             <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Groom</span>
             <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Shalika</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of K A chandrapala</p>
+            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Son of Chandrapala Kodithuwakku and Kusumalatha Hennayaka</p>
           </div>
           <div className="hidden lg:flex justify-end mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />
@@ -88,7 +88,7 @@ export const CoupleDetails: React.FC = () => {
           <div className="mb-4 flex flex-col items-center lg:items-start">
             <span className="text-brand-primary uppercase tracking-[0.4em] text-[10px] font-bold mb-3 block">The Bride</span>
             <h3 className="text-4xl sm:text-5xl font-display text-stone-800 mb-2 drop-shadow-sm">Imara</h3>
-            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Y. M Nawarathna and A M Sujani Wijethunga</p>
+            <p className="text-stone-500/90 font-serif italic text-base sm:text-lg">Daughter of Nawarathna Bandara and Sujani Wijethunga</p>
           </div>
           <div className="hidden lg:flex justify-start mt-8">
             <Heart className="w-6 h-6 text-brand-pink/80 fill-brand-pink/30 transform hover:scale-110 transition-transform cursor-pointer drop-shadow-sm" />

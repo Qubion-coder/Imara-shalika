@@ -5,7 +5,7 @@ import { FloatingPetals } from './components/FloatingPetals';
 
 import { Countdown } from './components/Countdown';
 import { HappyCouple } from './components/HappyCouple';
-import { HorizontalGallery } from './components/HorizontalGallery';
+
 import { HomecomingDetails } from './components/HomecomingDetails';
 
 import { NoteFromUs } from './components/NoteFromUs';
@@ -126,7 +126,7 @@ export default function App() {
 
             <HappyCouple />
 
-            <HorizontalGallery />
+
 
             <HomecomingDetails />
 
