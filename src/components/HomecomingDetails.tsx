@@ -71,7 +71,7 @@ export const HomecomingDetails: React.FC = () => {
           <a 
             target="_blank" 
             rel="noreferrer"
-            href="https://maps.app.goo.gl/sPhQ8ByTPagJzPES7?g_st=aw"
+            href="https://maps.app.goo.gl/sGEStucCUbkfLeDS6"
             className="group relative inline-flex items-center justify-center space-x-3 px-10 py-4 overflow-hidden rounded-full border border-[#FFFFFF] bg-transparent transition-all duration-300 hover:bg-[#FFFFFF] hover:shadow-[0_0_20px_rgba(212,175,55,0.4)]"
           >
             <span className="absolute inset-0 w-full h-full bg-[#FFFFFF] opacity-0 group-hover:opacity-10 transition-opacity duration-300"></span>

@@ -5,7 +5,7 @@ import { MapPin, Navigation, Compass, Map } from 'lucide-react';
 export const Location: React.FC = () => {
    const venueAddress = "Crown Regency Hotel, Badulla";
   const mapUrl = `https://maps.google.com/maps?q=Senuri%20Grand%20Castello&t=&z=15&ie=UTF8&iwloc=&output=embed`;
-  const liveLocationUrl = "https://maps.app.goo.gl/sPhQ8ByTPagJzPES7?g_st=aw";
+  const liveLocationUrl = "https://maps.app.goo.gl/sGEStucCUbkfLeDS6";
 
   return (
     <div className="max-w-[85rem] mx-auto px-6 relative py-12">
